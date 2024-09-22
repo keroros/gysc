@@ -20,14 +20,14 @@ powerDumped = 0
 [hb]
 postSimFile = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/rtl.fsdb
 syncTime = 0
-viewport = 70 27 2484 1170 0 0 276 2482
+viewport = 70 27 2484 1170 0 0 57 2482
 activeNode = "pi_ctrl_top_tb"
 activeScope = "pi_ctrl_top_tb"
 activeFile = "/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/tb/pi_ctrl_top_tb.v"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 0
+sourceBeginLine = 11
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -45,6 +45,7 @@ traceIncTopPort = False
 leadingZero = False
 signalPane = False
 Scope1 = "pi_ctrl_top_tb"
+multipleSelection = 1 11 2 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
@@ -53,13 +54,13 @@ invokeDir = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR
 [hb.sourceTab.1]
 scope = pi_ctrl_top_tb
 File = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/tb/pi_ctrl_top_tb.v
-Line = 1
+Line = 12
 [nMemoryManager]
 WaveformFile = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/rtl.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 28 2484 312 394 275
+viewPort = 0 28 2484 466 394 275
 primaryWindow = TRUE
 SessionFile = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

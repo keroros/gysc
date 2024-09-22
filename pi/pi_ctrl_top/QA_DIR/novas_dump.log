@@ -154,13 +154,12 @@ coredumpsize		0 kbytes
 memoryuse		unlimited
 vmemoryuse		unlimited
 descriptors		1048576
-memorylocked		1010504 kbytes
+memorylocked		1010500 kbytes
 maxproc		31274
 ======================================
 (Special)Runtime environment variables:
 
 Runtime environment variables:
-TMUX_PANE=%14
 GNOME_SHELL_SESSION_MODE=ubuntu
 SSH_AGENT_LAUNCHER=gnome-keyring
 LC_NAME=zh_CN.UTF-8
@@ -172,8 +171,8 @@ LSCOLORS=Gxfxcxdxbxegedabagacad
 XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 OLDPWD=/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top
 LANG=en_US.UTF-8
-XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.DIEDU2
-GNOME_TERMINAL_SERVICE=:1.102
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.E8G2U2
+GNOME_TERMINAL_SERVICE=:1.104
 VCS_TARGET_ARCH=amd64
 MAKEFLAGS=
 LM_LICENSE_FILE=/home/qidc/Synopsys/license/Synopsys.dat
@@ -183,23 +182,21 @@ WAYLAND_DISPLAY=wayland-0
 XDG_SESSION_DESKTOP=ubuntu
 ZSH=/home/qidc/.oh-my-zsh
 XDG_SESSION_TYPE=wayland
-TMUX=/tmp/tmux-1000/default,2635,0
 NOVAS_HOME=/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2
-SESSION_MANAGER=local/qidc:@/tmp/.ICE-unix/1312,unix/qidc:/tmp/.ICE-unix/1312
+SESSION_MANAGER=local/qidc:@/tmp/.ICE-unix/1253,unix/qidc:/tmp/.ICE-unix/1253
 VERDI_HOME=/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 SHELL=/bin/zsh
 XMODIFIERS=@im=ibus
-LD_LIBRARY_PATH=/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/share/NPI/lib/LINUX64_GNU_520:/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUX64:/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/share/NPI/lib/LINUX64_GNU_520:/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUX64:
-SHLVL=2
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/2b3290af_890b_490c_9799_280d5b57d890
-PATH=/home/qidc/Synopsys/scl/2018.06/linux64/bin:/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/bin:/home/qidc/Synopsys/vcs/O-2018.09-SP2/bin:/home/qidc/Synopsys/vcs/O-2018.09-SP2/gui/dve/bin:/home/qidc/Synopsys/scl/2018.06/linux64/bin:/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/bin:/home/qidc/Synopsys/vcs/O-2018.09-SP2/bin:/home/qidc/Synopsys/vcs/O-2018.09-SP2/gui/dve/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+LD_LIBRARY_PATH=/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/share/NPI/lib/LINUX64_GNU_520:/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUX64:
+SHLVL=1
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/528d9a20_8d87_4700_a597_0fb1c050d4c6
+PATH=/home/qidc/Synopsys/scl/2018.06/linux64/bin:/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/bin:/home/qidc/Synopsys/vcs/O-2018.09-SP2/bin:/home/qidc/Synopsys/vcs/O-2018.09-SP2/gui/dve/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 LANGUAGE=en_US:
 LC_MONETARY=zh_CN.UTF-8
 LC_TIME=zh_CN.UTF-8
 USERNAME=qidc
-TERM_PROGRAM=tmux
 GNOME_SETUP_DISPLAY=:1
 LC_TELEPHONE=zh_CN.UTF-8
 XDG_CURRENT_DESKTOP=ubuntu:GNOME
@@ -209,29 +206,28 @@ VERDI_DIR=/home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2
 DESKTOP_SESSION=ubuntu
 LESS=-R
 LOGNAME=qidc
-SYSTEMD_EXEC_PID=1558
+SYSTEMD_EXEC_PID=1503
 DISPLAY=:0
-GTK_MODULES=gail:atk-bridge
 USER=qidc
+GTK_MODULES=gail:atk-bridge
 VCS_HOME=/home/qidc/Synopsys/vcs/O-2018.09-SP2
 LC_MEASUREMENT=zh_CN.UTF-8
 PAGER=less
 _=/usr/bin/make
 LC_PAPER=zh_CN.UTF-8
-MAKE_TERMOUT=/dev/pts/9
+MAKE_TERMOUT=/dev/pts/0
 XDG_RUNTIME_DIR=/run/user/1000
 SNPSLMD_LICENSE_FILE=27000@qidc
 DVE_HOME=/home/qidc/Synopsys/vcs/O-2018.09-SP2/gui/dve
 COLORTERM=truecolor
 NPI_PLATFORM=LINUX64_GNU_472
-MAKE_TERMERR=/dev/pts/9
+MAKE_TERMERR=/dev/pts/0
 XDG_SESSION_CLASS=user
 HOME=/home/qidc
 QT_IM_MODULE=ibus
-TERM=screen
+TERM=xterm-256color
 VTE_VERSION=6800
 XDG_MENU_PREFIX=gnome-
-TERM_PROGRAM_VERSION=3.2a
 GDMSESSION=ubuntu
 LC_IDENTIFICATION=zh_CN.UTF-8
 MAKELEVEL=1
@@ -244,61 +240,61 @@ DVE=/home/qidc/Synopsys/vcs/O-2018.09-SP2/gui/dve
 SPECMAN_OUTPUT_TO_TTY=1
 Runtime command line arguments:
 argv[0]=./simv
-246 profile - 100
-          CPU/Mem usage: 0.130 sys,  0.040 user,  183.60M mem
-247 Sun Sep 22 19:28:26 2024
-248 pliAppInit
-249 FSDB_GATE is set.
-250 FSDB_RTL is set.
-251 Enable Parallel Dumping.
-252 pliAppMiscSet: New Sim Round
-253 pliEntryInit
-254 LIBSSCORE=found /home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs201809.so through $NOVAS_HOME setting.
-255 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
-256 (C) 1996 - 2019 by Synopsys, Inc.
-257 sps_call_fsdbDumpfile_main at 0 : /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/tb/pi_ctrl_top_tb.v(43)
-258 argv[0]: (./rtl.fsdb)
-259 *Verdi* : Create FSDB file './rtl.fsdb'
-260 compile option from '/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/simv.daidir/vcs_rebuild'.
-261   "vcs '-full64' '-sverilog' '-timescale=1ns/1ns' '+v2k' '-debug_access+all' '-kdb' '-lca' '-f' 'filelist.f' 2>&1"
-262 FSDB_VCS_ENABLE_FAST_VC is enable
-263 sps_call_fsdbDumpvars_vd_main at 0 : /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/tb/pi_ctrl_top_tb.v(44)
-264 argv[0]: (+all)
-265 [spi_vcs_vd_ppi_create_root]: no upf option
-266 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
-267 *Verdi* : Begin traversing the scopes, layer (0).
-268 *Verdi* : Enable +all dumping.
-269 *Verdi* : End of traversing.
-270 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.180 sys,  0.040 user,  278.61M mem
-                   incr: 0.010 sys,  0.000 user,  7.46M mem
-                   accu: 0.010 sys,  0.000 user,  7.46M mem
-              accu incr: 0.010 sys,  0.000 user,  7.46M mem
+242 profile - 100
+          CPU/Mem usage: 0.110 sys,  0.050 user,  183.71M mem
+243 Sun Sep 22 21:27:41 2024
+244 pliAppInit
+245 FSDB_GATE is set.
+246 FSDB_RTL is set.
+247 Enable Parallel Dumping.
+248 pliAppMiscSet: New Sim Round
+249 pliEntryInit
+250 LIBSSCORE=found /home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs201809.so through $NOVAS_HOME setting.
+251 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+252 (C) 1996 - 2019 by Synopsys, Inc.
+253 sps_call_fsdbDumpfile_main at 0 : /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/tb/pi_ctrl_top_tb.v(43)
+254 argv[0]: (./rtl.fsdb)
+255 *Verdi* : Create FSDB file './rtl.fsdb'
+256 compile option from '/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/simv.daidir/vcs_rebuild'.
+257   "vcs '-full64' '-sverilog' '-timescale=1ns/1ns' '+v2k' '-debug_access+all' '-kdb' '-lca' '-f' 'filelist.f' 2>&1"
+258 FSDB_VCS_ENABLE_FAST_VC is enable
+259 sps_call_fsdbDumpvars_vd_main at 0 : /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/tb/pi_ctrl_top_tb.v(44)
+260 argv[0]: (+all)
+261 [spi_vcs_vd_ppi_create_root]: no upf option
+262 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+263 *Verdi* : Begin traversing the scopes, layer (0).
+264 *Verdi* : Enable +all dumping.
+265 *Verdi* : End of traversing.
+266 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.120 sys,  0.050 user,  278.61M mem
+                   incr: 0.000 sys,  0.000 user,  7.51M mem
+                   accu: 0.000 sys,  0.000 user,  7.51M mem
+              accu incr: 0.000 sys,  0.000 user,  7.51M mem
 
           Count usage: 21 var,  16 idcode,  5 callback
                  incr: 21 var,  16 idcode,  5 callback
                  accu: 21 var,  16 idcode,  5 callback
             accu incr: 21 var,  16 idcode,  5 callback
-271 Sun Sep 22 19:28:27 2024
-272 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.180 sys,  0.040 user,  279.67M mem
+267 Sun Sep 22 21:27:41 2024
+268 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.120 sys,  0.050 user,  279.66M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.010 sys,  0.000 user,  8.52M mem
+                   accu: 0.000 sys,  0.000 user,  8.56M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
           Count usage: 21 var,  16 idcode,  5 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 21 var,  16 idcode,  5 callback
             accu incr: 0 var,  0 idcode,  0 callback
-273 Sun Sep 22 19:28:27 2024
-274 End of simulation at 10020000
-275 Sun Sep 22 19:28:27 2024
-276 Begin FSDB profile info:
-277 FSDB Writer : bc1(2007) bcn(598) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.005377) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+269 Sun Sep 22 21:27:41 2024
+270 End of simulation at 10020000
+271 Sun Sep 22 21:27:41 2024
+272 Begin FSDB profile info:
+273 FSDB Writer : bc1(2007) bcn(598) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.001732) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-278 End FSDB profile info
-279 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
-280                        ProduceTime:0.237325127 ConsumerTime:0.000000000 Buffer:64MB
-281 SimExit
-282 Sim process exit
+274 End FSDB profile info
+275 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
+276                        ProduceTime:0.184013459 ConsumerTime:0.000000000 Buffer:64MB
+277 SimExit
+278 Sim process exit

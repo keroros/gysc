@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 28 2484 312 394 275
+viewPort 0 28 2484 466 394 275
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -23,9 +23,22 @@ marker 0.000000
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 0
+top 9
 ; marker line index
-markerPos 3
+markerPos 12
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+activeDirFile "" "/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/rtl.fsdb"
+allDtoA "DtoA_ref_i[31:0]" 0.000000 1.000000 0.500000 0.500000 /pi_ctrl_top_tb/u_pi_ctrl_top/u_pi_ctrl/ref_i[31:0] -UNSIGNED 
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+allDtoA "DtoA_pi_ctrl_i[31:0]" 0.000000 1.000000 0.500000 0.500000 /pi_ctrl_top_tb/u_pi_ctrl_top/u_pi_ctrl/pi_ctrl_i[31:0] -UNSIGNED 
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+allDtoA "DtoA_pi_ctrl_o[31:0]" 0.000000 1.000000 0.500000 0.500000 /pi_ctrl_top_tb/u_pi_ctrl_top/u_pi_ctrl/pi_ctrl_o[31:0] -UNSIGNED 
 
 ; event list
 ; addEvent event_name event_expression
@@ -50,7 +63,16 @@ activeDirFile "" "/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/rtl.fsd
 addSignal -h 15 /pi_ctrl_top_tb/u_pi_ctrl_top/clk
 addSignal -h 15 -holdScope rst_n
 addSignal -h 15 -holdScope ref_i[31:0]
-addGroup "G2"
+addGroup "u_pi_ctrl"
+addSignal -h 15 /pi_ctrl_top_tb/u_pi_ctrl_top/u_pi_ctrl/clk
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -UNSIGNED -HEX -holdScope ref_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope pi_ctrl_i[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope pi_ctrl_o[31:0]
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 /pi_ctrl_top_tb/u_pi_ctrl_top/u_pi_ctrl/DtoA_ref_i[31:0]
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 /pi_ctrl_top_tb/u_pi_ctrl_top/u_pi_ctrl/DtoA_pi_ctrl_i[31:0]
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 /pi_ctrl_top_tb/u_pi_ctrl_top/u_pi_ctrl/DtoA_pi_ctrl_o[31:0]
+addGroup "G3"
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm
