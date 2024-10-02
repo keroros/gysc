@@ -1,15 +1,15 @@
 {
-    "std": [
-        "std",
-        "reYIK",
-        "module",
-        1
-    ],
     "pi_ctrl_top_tb": [
         "pi_ctrl_top_tb",
         "M9kEQ",
         "module",
         2
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
     ],
     "...MASTER...": [
         "SIM",
