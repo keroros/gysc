@@ -9,8 +9,8 @@ overhead: (9522) bytes for (2) blocks [Average: (4761) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
 read   => 1(times) 4K(bytes) [1K bytes compressed data from file]
-access => 193958(times) 1517M(bytes)
-          [hit ratio: 99.9995%]
+access => 59348(times) 466M(bytes)
+          [hit ratio: 99.9983%]
 
 time: write(0) read(0)  unit: second
 
@@ -25,8 +25,8 @@ idxCnt: (3)
 closeHead: (1)
 closeTail: (2)
 openCnt: (2)
-fid(2): fd(29) fileName(/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/verdiLog/_swap_0001#1757367822#27217)
-	size(0) lastModTime(0) curModTime(1727089408)
+fid(2): fd(29) fileName(/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/verdiLog/_swap_0001#1757367822#14020)
+	size(0) lastModTime(0) curModTime(1728451573)
 	mode(w+b)	hot(0) cool(1) pos(0)
 fid(1): fd(1073741824) fileName(/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/simv.daidir/kdb.elab++/work.lib++/pi_ctrl_top_tb.v.tdc)
 	size(1998) lastModTime(1727089400) curModTime(1727089400)
@@ -34,6 +34,6 @@ fid(1): fd(1073741824) fileName(/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 ==================================================
-mySelf(16314060) pre(147b75f0) next(0)
+mySelf(144b9960) pre(12c522b0) next(0)
 version(200506)
 date(Feb 11 2019 22:10:27)

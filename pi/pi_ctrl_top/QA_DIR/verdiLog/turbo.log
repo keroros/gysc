@@ -1,3 +1,3 @@
 Command Line: /home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -ssf rtl.fsdb -sswr signal.rc
 uname(Linux qidc 6.8.0-40-generic #40~22.04.3-Ubuntu SMP PREEMPT_DYNAMIC Tue Jul 30 17:30:19 UTC 2 x86_64)
-au time 193.453283 3.617171 5.167672 delta 398393344 398393344 total 769785856 769785856
+au time 21.986886 1.375852 1.374181 delta 397660160 397660160 total 769052672 769052672
