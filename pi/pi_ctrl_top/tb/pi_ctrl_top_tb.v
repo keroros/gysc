@@ -39,9 +39,9 @@ module pi_ctrl_top_tb;
         ref_i = 32'd350;
     end
 
-		initial begin
-			$fsdbDumpfile("./rtl.fsdb");
-			$fsdbDumpvars("+all");
-		end
+	initial begin
+		$fsdbDumpfile("./rtl.fsdb");
+		$fsdbDumpvars("+all");
+	end
 
 endmodule
