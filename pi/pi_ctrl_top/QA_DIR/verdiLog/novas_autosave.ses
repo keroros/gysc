@@ -20,14 +20,14 @@ powerDumped = 0
 [hb]
 postSimFile = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/rtl.fsdb
 syncTime = 0
-viewport = 70 27 2488 1174 0 0 57 2486
-activeNode = "pi_ctrl_top_tb"
-activeScope = "pi_ctrl_top_tb"
-activeFile = "/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/tb/pi_ctrl_top_tb.v"
+viewport = 70 27 2484 1170 0 0 57 2482
+activeNode = "pi_ctrl_top_tb.u_pi_ctrl_top.u_pi_ctrl"
+activeScope = "pi_ctrl_top_tb.u_pi_ctrl_top.u_pi_ctrl"
+activeFile = "/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl/rtl/pi_ctrl.v"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 11
+sourceBeginLine = 0
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -44,23 +44,25 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "pi_ctrl_top_tb"
-multipleSelection = 1 11 2 0 0
+Scope1 = "pi_ctrl_top_tb.u_pi_ctrl_top.u_pi_ctrl"
+Scope2 = "pi_ctrl_top_tb.u_pi_ctrl_top.u_feedback"
+Scope3 = "pi_ctrl_top_tb.u_pi_ctrl_top"
+Scope4 = "pi_ctrl_top_tb"
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-dbdir" "/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/simv.daidir" 
 invokeDir = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR
 [hb.sourceTab.1]
-scope = pi_ctrl_top_tb
-File = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/tb/pi_ctrl_top_tb.v
-Line = 12
+scope = pi_ctrl_top_tb.u_pi_ctrl_top.u_pi_ctrl
+File = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl/rtl/pi_ctrl.v
+Line = 1
 [nMemoryManager]
 WaveformFile = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/rtl.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 28 2488 201 394 275
+viewPort = 0 28 2484 312 394 275
 primaryWindow = TRUE
 SessionFile = /home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

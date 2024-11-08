@@ -1,3 +1,4 @@
 Command Line: /home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -ssf rtl.fsdb -sswr signal.rc
-uname(Linux qidc 6.8.0-40-generic #40~22.04.3-Ubuntu SMP PREEMPT_DYNAMIC Tue Jul 30 17:30:19 UTC 2 x86_64)
-au time 21.986886 1.375852 1.374181 delta 397660160 397660160 total 769052672 769052672
+uname(Linux qidc 6.8.0-45-generic #45~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep 11 15:25:05 UTC 2 x86_64)
+NULL string pointer for format string "%s", position 1.NULL string pointer for format string "%s", position 1.NULL string pointer for format string "%s", position 1.NULL string pointer for format string "%s", position 1.NULL string pointer for format string "%s", position 1.Disabled AskUser2 Message (Response 0): Close all windows and exit verdi?
+au time 894.967286 6.899864 15.032445 delta 411922432 411922432 total 783314944 783314944

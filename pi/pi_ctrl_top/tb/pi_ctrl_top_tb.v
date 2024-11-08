@@ -5,13 +5,13 @@
 // Project Name: gysc_asic
 // File Name: pi_ctrl_top_tb.v
 // Versions: v1.0
-// Description: PI控制器测试模块
-// 
+// Description:
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 module pi_ctrl_top_tb;
 
-    parameter ClockPeriod = 10;  // 时钟周期为10ns
+    parameter ClockPeriod = 10;  //
 
     reg clk;
     reg rst_n;

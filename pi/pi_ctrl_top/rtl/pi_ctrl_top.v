@@ -5,14 +5,14 @@
 // Project Name: gysc_asic
 // File Name: pi_ctrl_top.v
 // Versions: v1.0
-// Description: PI控制器的与测试环路组成的Top模块
-// 
+// Description:
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 module pi_ctrl_top (
-    input wire               clk,    // 时钟
-    input wire               rst_n,  // 复位
-    input wire signed [31:0] ref_i   // 目标值
+    input wire               clk,
+    input wire               rst_n,
+    input wire signed [31:0] ref_i
 );
 
     wire [31:0] pi_ctrl_o;
