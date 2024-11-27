@@ -1,0 +1,81 @@
+Command Line: /home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -ssf rtl.fsdb -sswr signal.rc
+uname(Linux qidc 6.8.0-45-generic #45~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep 11 15:25:05 UTC 2 x86_64)
+Disabled AskUser2 Message (Response 0): Close all windows and exit verdi?
+au time 709.647998 2.899977 7.341718 delta 172060672 172060672 total 543453184 543453184
+ilter
+VERILOG dat_out[34:0]
+-----
+second field= signal
+VERILOG cic_filter_tb
+VERILOG u_cic_filter
+VERILOG clk_vld_out
+-----
+second field= signal
+type= DS_STRING
+dat_in[4:0] dat_out[34:0] clk_vld_out
+type= DS_SIGNAL element= 4 field= 2
+VERILOG cic_filter_tb
+VERILOG file
+-----
+second field= signal
+VERILOG cic_filter_tb
+VERILOG scan_file
+-----
+second field= signal
+VERILOG cic_filter_tb
+VERILOG data[31:0]
+-----
+second field= signal
+VERILOG cic_filter_tb
+VERILOG data_in[31:0]
+-----
+second field= signal
+type= DS_STRING
+file scan_file data[31:0] data_in[31:0]
+type= DS_SIGNAL element= 1 field= 2
+VERILOG cic_filter_tb
+VERILOG clk
+-----
+second field= signal
+type= DS_STRING
+clk
+type= DS_SIGNAL element= 1 field= 2
+VERILOG cic_filter_tb
+VERILOG dat_out[34:0]
+-----
+second field= signal
+type= DS_STRING
+dat_out[34:0]
+type= DS_SIGNAL element= 1 field= 2
+VERILOG cic_filter_tb
+VERILOG u_cic_filter
+VERILOG dat_in[4:0]
+-----
+second field= signal
+type= DS_STRING
+dat_in[4:0]
+type= DS_SIGNAL element= 1 field= 2
+VERILOG cic_filter_tb
+VERILOG u_cic_filter
+VERILOG dat_out[34:0]
+-----
+second field= signal
+type= DS_STRING
+dat_out[34:0]
+type= DS_SIGNAL element= 1 field= 2
+VERILOG cic_filter_tb
+VERILOG u_cic_filter
+VERILOG dat_in[4:0]
+-----
+second field= signal
+type= DS_STRING
+dat_in[4:0]
+type= DS_SIGNAL element= 1 field= 2
+VERILOG cic_filter_tb
+VERILOG u_cic_filter
+VERILOG dat_out[34:0]
+-----
+second field= signal
+type= DS_STRING
+dat_out[34:0]
+au time 2597.699675 23.456492 43.591048 delta 877907968 877907968 total 1249300480 1249300480
