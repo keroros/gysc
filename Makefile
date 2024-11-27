@@ -1,7 +1,8 @@
 SUBDIRS := \
-	pi/feedback/QA_DIR \
-	pi/pi_ctrl/QA_DIR \
-	pi/pi_ctrl_top/QA_DIR
+	/home/qidc/Nutstore/Project/gysc/pi/feedback/QA_DIR \
+	/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl/QA_DIR \
+	/home/qidc/Nutstore/Project/gysc/pi/pi_ctrl_top/QA_DIR \
+	/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR \
 
 .PHONY: clean
 clean:
