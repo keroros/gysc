@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 28 2490 418 394 275
+viewPort 0 28 2490 623 297 216
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,25 +16,16 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 661938850.000000
-cursor 84055000.000000
+zoom 133517853.137931 134079616.544824
+cursor 132505000.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 10
+top 0
 ; marker line index
-markerPos 11
-
-; digital to analog list
-; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
-activeDirFile "" "/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/rtl.fsdb"
-allDtoA "DtoA_dat_out[34:0]" 0.000000 1.000000 0.500000 0.500000 /cic_filter_tb/u_cic_filter/dat_out[34:0] -1COMP 
-
-; digital to analog list
-; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
-allDtoA "DtoA_dat_in[4:0]" 0.000000 1.000000 0.500000 0.500000 /cic_filter_tb/u_cic_filter/dat_in[4:0] -1COMP 
+markerPos 8
 
 ; event list
 ; addEvent event_name event_expression
@@ -57,19 +48,27 @@ curSTATUS ByChange
 addGroup "G1"
 activeDirFile "" "/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/rtl.fsdb"
 addSignal -h 21 /cic_filter_tb/clk
-addSignal -h 21 /cic_filter_tb/u_cic_filter/rstn
+addSignal -h 21 -holdScope file[31:0]
+addSignal -h 21 -holdScope scan_file[31:0]
+addSignal -h 21 -1COMP -HEX -holdScope data[31:0]
+addSignal -h 21 -1COMP -HEX -holdScope data_in[31:0]
+addSignal -h 21 /cic_filter_tb/u_cic_filter/dat_in[4:0]
 addGroup "G2"
-addSignal -h 21 -1COMP -HEX /cic_filter_tb/u_cic_filter/dat_in[4:0]
-addSignal -h 21 -1COMP -HEX -holdScope section_out1[34:0]
-addSignal -h 21 -1COMP -HEX -holdScope dat_out[34:0]
+addSignal -h 21 /cic_filter_tb/clk_vld_out
+addSignal -h 21 -holdScope dat_out[34:0]
 addGroup "G3"
-addSignal -h 21 /cic_filter_tb/u_cic_filter/phase_1
-addSignal -h 21 -1COMP -HEX -holdScope dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 /cic_filter_tb/u_cic_filter/DtoA_dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 /cic_filter_tb/u_cic_filter/DtoA_dat_in[4:0]
-addSignal -h 21 -1COMP -HEX /cic_filter_tb/u_cic_filter/section_out5[34:0]
-addSignal -h 21 -1COMP -HEX -holdScope section_out5_r[34:0]
-addGroup "G4"
+
+; grid status
+; gridSignal signal_name
+; gridEdge 0 | 1 | 2
+; gridCount
+; gridCycleTime from to cycleTime
+; gridStartNum num
+; gridLockCount
+gridSignal /cic_filter_tb/clk
+gridEdge 1
+gridCount
+gridStartNum 1
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm

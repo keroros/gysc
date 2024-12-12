@@ -1,0 +1,36 @@
+Command Line: /home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -ssf rtl.fsdb -sswr signal.rc
+uname(Linux qidc 6.8.0-49-generic #49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2 x86_64)
+type= DS_SIGNAL element= 6 field= 2
+VERILOG hb_filter_tb
+VERILOG u_hb1_filter
+VERILOG clk
+-----
+second field= signal
+VERILOG hb_filter_tb
+VERILOG u_hb1_filter
+VERILOG rstn
+-----
+second field= signal
+VERILOG hb_filter_tb
+VERILOG u_hb1_filter
+VERILOG clk_vld_in
+-----
+second field= signal
+VERILOG hb_filter_tb
+VERILOG u_hb1_filter
+VERILOG dat_in[34:0]
+-----
+second field= signal
+VERILOG hb_filter_tb
+VERILOG u_hb1_filter
+VERILOG clk_vld_out
+-----
+second field= signal
+VERILOG hb_filter_tb
+VERILOG u_hb1_filter
+VERILOG dat_out[34:0]
+-----
+second field= signal
+type= DS_STRING
+clk rstn clk_vld_in dat_in[34:0] clk_vld_out dat_out[34:0]
+au time 4000.090563 14.927361 53.205465 delta 710148096 710148096 total 1081540608 1081540608

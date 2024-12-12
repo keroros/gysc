@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/11/27 17:25
-// Last Modified : 2024/11/27 20:57
+// Last Modified : 2024/12/11 14:32
 // File Name     : cic_filter_tb.sv
 // Description   :
 //         
@@ -23,7 +23,6 @@
 // -FHDR----------------------------------------------------------------------------
 
 module cic_filter_tb;
-
 
     parameter ClockPeriod = 10;  // 时钟周期为10ns
 
@@ -88,3 +87,4 @@ module cic_filter_tb;
 	end
 
 endmodule
+

@@ -1,196 +1,42 @@
 version: (200506)
 
 available memory: 64M bytes
-used memory: 237568 bytes [need 232K bytes if disable swap]
+used memory: 155648 bytes [need 152K bytes if disable swap]
 
-used block: 8 [memory(8) file(0)]
-                 [ 8K(5) 64K(3) { total 232K bytes } ]
-overhead: (9522) bytes for (8) blocks [Average: (1190) bytes/block]
+used block: 5 [memory(5) file(0)]
+                 [ 8K(3) 64K(2) { total 152K bytes } ]
+overhead: (9522) bytes for (5) blocks [Average: (1904) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 3(times) 28K(bytes) [5K bytes compressed data from file]
-access => 1982746(times) 15504M(bytes)
-          [hit ratio: 99.9998%]
+read   => 2(times) 13K(bytes) [3K bytes compressed data from file]
+access => 334021(times) 2616M(bytes)
+          [hit ratio: 99.9994%]
 
 time: write(0) read(0)  unit: second
 
 swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/verdiLog)
-used swap file number: (4)
+used swap file number: (3)
 
 
 
 swap file manager:
 arrSize: (256)
-idxCnt: (5)
+idxCnt: (4)
 closeHead: (1)
-closeTail: (4)
-openCnt: (1)
-fid(4): fd(0) fileName(NULL)
-	mode(rb)	hot(3) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(rb)	hot(1) cool(4) pos(0)
-fid(2): fd(29) fileName(/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/verdiLog/_swap_0001#1757367822#535245)
-	size(0) lastModTime(0) curModTime(1732710405)
+closeTail: (3)
+openCnt: (3)
+fid(3): fd(1073741825) fileName(/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/simv.daidir/kdb.elab++/work.lib++/cic_filter_tb.sv.tdc)
+	size(3737) lastModTime(1733899003) curModTime(1733899003)
+	mode(rb)	hot(0) cool(2) pos(0)
+fid(2): fd(29) fileName(/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/verdiLog/_swap_0001#1757367822#644507)
+	size(0) lastModTime(0) curModTime(1733899009)
 	mode(w+b)	hot(3) cool(1) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(rb)	hot(2) cool(3) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Wed Nov 27 20:39:41 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 409600 bytes [need 232K bytes if disable swap]
-
-used block: 15 [memory(15) file(0)]
-                 [ 8K(10) 64K(5) { total 400K bytes } ]
-overhead: (9522) bytes for (15) blocks [Average: (634) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 5(times) 51K(bytes) [10K bytes compressed data from file]
-access => 5747111(times) 44926M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/verdiLog)
-used swap file number: (7)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (8)
-closeHead: (5)
-closeTail: (7)
-openCnt: (1)
-fid(7): fd(0) fileName(NULL)
-	mode(rb)	hot(5) cool(0) pos(0)
-fid(6): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/verdiLog/_swap_0001#1757367822#535245)
-	size(0) lastModTime(0) curModTime(1732711181)
-	mode(w+b)	hot(7) cool(5) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(rb)	hot(6) cool(7) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Wed Nov 27 20:57:12 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 491520 bytes [need 232K bytes if disable swap]
-
-used block: 18 [memory(18) file(0)]
-                 [ 8K(12) 64K(6) { total 480K bytes } ]
-overhead: (9522) bytes for (18) blocks [Average: (529) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 6(times) 66K(bytes) [12K bytes compressed data from file]
-access => 5790698(times) 45271M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/verdiLog)
-used swap file number: (8)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (10)
-closeHead: (8)
-closeTail: (9)
-openCnt: (1)
-fid(9): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/verdiLog/_swap_0001#1757367822#535245)
-	size(0) lastModTime(0) curModTime(1732712232)
-	mode(w+b)	hot(0) cool(8) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(rb)	hot(9) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Wed Nov 27 20:57:39 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 581632 bytes [need 232K bytes if disable swap]
-
-used block: 22 [memory(22) file(0)]
-                 [ 8K(15) 64K(7) { total 568K bytes } ]
-overhead: (9522) bytes for (22) blocks [Average: (432) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 7(times) 81K(bytes) [14K bytes compressed data from file]
-access => 6374098(times) 49837M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/verdiLog)
-used swap file number: (10)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (13)
-closeHead: (10)
-closeTail: (11)
-openCnt: (2)
-fid(12): fd(0) fileName(/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/simv.daidir/kdb.elab++/work.lib++/cic_filter_tb.sv.tdc)
-	size(3734) lastModTime(1732712253) curModTime(1732712253)
-	mode(rb)	hot(0) cool(0) pos(0)
-fid(11): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/verdiLog/_swap_0001#1757367822#535245)
-	size(0) lastModTime(0) curModTime(1732712259)
-	mode(w+b)	hot(0) cool(10) pos(0)
-fid(10): fd(1073741824) fileName(/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/simv.daidir/kdb.elab++/work.lib++/cic_filter.v.tdc)
-	size(4374) lastModTime(1732712253) curModTime(1732712253)
-	mode(rb)	hot(11) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(1073741824) fileName(/home/qidc/Nutstore/Project/gysc/adc/cic_filter/QA_DIR/simv.daidir/kdb.elab++/work.lib++/sp_ram.v.tdc)
+	size(2426) lastModTime(1733899003) curModTime(1733899003)
+	mode(rb)	hot(2) cool(0) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 ==================================================
-mySelf(160d3c20) pre(131c6e30) next(0)
+mySelf(15cbf4a0) pre(1493e470) next(0)
 version(200506)
 date(Feb 11 2019 22:10:27)
