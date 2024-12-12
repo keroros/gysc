@@ -8,23 +8,65 @@ debLoadSimResult \
 wvCreateWindow
 wvRestoreSignal -win $_nWave2 "signal.rc" -overWriteAutoAlias on -appendSignals \
            on
-verdiSetFont -monoFont "Courier" -monoFontSize "18"
-simSetSvtbMode off
-verdiSetFont -monoFont "Courier" -monoFontSize "24"
-verdiSetFont -monoFont "Fixed" -monoFontSize "20"
-verdiSetFont -monoFont "Fixed" -monoFontSize "14"
-verdiSetFont -monoFont "Clean" -monoFontSize "14"
-verdiSetFont -monoFont "Clean" -monoFontSize "16"
-verdiSetFont -monoFont "Courier" -monoFontSize "14"
-verdiSetFont -monoFont "Courier" -monoFontSize "18"
-verdiSetFont -monoFont "Courier" -monoFontSize "14"
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 1291729.359568 -snap {("G6" 14)}
+wvSetCursor -win $_nWave2 7079776.234568 -snap {("G6" 5)}
+wvSetCursor -win $_nWave2 8360512.152778 -snap {("G6" 5)}
+wvSetCursor -win $_nWave2 7069607.301312 -snap {("G6" 5)}
+wvSetCursor -win $_nWave2 8339349.778164 -snap {("G6" 5)}
 srcDeselectAll -win $_nTrace1
-srcDeselectAll -win $_nTrace1
-srcDeselectAll -win $_nTrace1
-srcDeselectAll -win $_nTrace1
-srcFindScope -open -win $_nTrace1
-srcFindScope -selectscope 1
-wvSelectStuckSignals -win $_nWave2
-wvSaveSignal -win $_nWave2 \
-           "/home/qidc/Nutstore/Project/gysc/adc/cic_comp_filter/QA_DIR/signal.rc"
 debExit

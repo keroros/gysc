@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 2490 534 294 230
+viewPort 0 27 2490 1267 294 1
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -23,9 +23,9 @@ marker 0.000000
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 0
+top 19
 ; marker line index
-markerPos 8
+markerPos 82
 
 ; digital to analog list
 ; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
@@ -35,6 +35,26 @@ allDtoA "DtoA_dat_in[34:0]" 0.000000 1.000000 0.500000 0.500000 /hb_filter_tb/u_
 ; digital to analog list
 ; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
 allDtoA "DtoA_dat_out[34:0]" 0.000000 1.000000 0.500000 0.500000 /hb_filter_tb/u_hb1_filter/dat_out[34:0] -1COMP 
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+allDtoA "DtoA_cic_dat_in[4:0]" 0.000000 1.000000 0.500000 0.500000 /hb_filter_tb/cic_dat_in[4:0] -1COMP 
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+allDtoA "DtoA_cic_dat_out[34:0]" 0.000000 1.000000 0.500000 0.500000 /hb_filter_tb/cic_dat_out[34:0] -1COMP 
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+allDtoA "DtoA_comp_dat_out[34:0]" 0.000000 1.000000 0.500000 0.500000 /hb_filter_tb/comp_dat_out[34:0] -1COMP 
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+allDtoA "DtoA_hb1_dat_out[34:0]" 0.000000 1.000000 0.500000 0.500000 /hb_filter_tb/hb1_dat_out[34:0] -1COMP 
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+allDtoA "DtoA_hb2_dat_out[34:0]" 0.000000 1.000000 0.500000 0.500000 /hb_filter_tb/hb2_dat_out[34:0] -1COMP 
 
 ; event list
 ; addEvent event_name event_expression
@@ -62,8 +82,82 @@ addSignal -h 16 -holdScope clk_vld_in
 addSignal -h 16 -1COMP -UDEC -holdScope dat_in[34:0]
 addSignal -h 16 -holdScope clk_vld_out
 addSignal -h 16 -1COMP -UDEC -holdScope dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 /hb_filter_tb/u_hb1_filter/DtoA_dat_in[34:0]
-addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 /hb_filter_tb/u_hb1_filter/DtoA_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 49 /hb_filter_tb/u_hb1_filter/DtoA_dat_in[34:0]
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 49 /hb_filter_tb/u_hb1_filter/DtoA_dat_out[34:0]
+addSignal -h 16 -1COMP -UDEC /hb_filter_tb/cic_dat_in[4:0]
+addSignal -h 16 -1COMP -UDEC -holdScope cic_dat_out[34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope comp_dat_out[34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope hb1_dat_out[34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope hb2_dat_out[34:0]
+addSignal -h 16 -holdScope clk
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 /hb_filter_tb/DtoA_cic_dat_in[4:0]
+addSignal -h 16 /hb_filter_tb/cic_clk_vld_out
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 /hb_filter_tb/DtoA_cic_dat_out[34:0]
+addSignal -h 16 /hb_filter_tb/comp_clk_vld_out
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 /hb_filter_tb/DtoA_comp_dat_out[34:0]
+addSignal -h 16 /hb_filter_tb/hb1_clk_vld_out
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 /hb_filter_tb/DtoA_hb1_dat_out[34:0]
+addSignal -h 16 /hb_filter_tb/hb2_clk_vld_out
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 /hb_filter_tb/DtoA_hb2_dat_out[34:0]
+addSignal -expanded -h 16 /hb_filter_tb/u_hb2_filter/dat0_r[37:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[37][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[36][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[35][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[34][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[33][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[32][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[31][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[30][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[29][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[28][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[27][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[26][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[25][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[24][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[23][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[22][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[21][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[20][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[19][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[18][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[17][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[16][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[15][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[14][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[13][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[12][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[11][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[10][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[9][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[8][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[7][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[6][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[5][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[4][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[3][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[2][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[1][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat0_r[0][34:0]
+addSignal -expanded -h 16 -1COMP -UDEC -holdScope dat1_r[18:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[18][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[17][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[16][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[15][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[14][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[13][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[12][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[11][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[10][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[9][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[8][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[7][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[6][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[5][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[4][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[3][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[2][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[1][34:0]
+addSignal -h 16 -1COMP -UDEC -holdScope dat1_r[0][34:0]
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status

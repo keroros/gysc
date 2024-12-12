@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 28 2490 541 394 275
+viewPort 0 28 2490 900 259 1
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,14 +16,14 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 10240390.625000
-cursor 2585000.000000
+zoom 1116960.116335 13215771.818038
+cursor 8355000.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 6
+top 0
 ; marker line index
 markerPos 26
 
@@ -69,8 +69,8 @@ addGroup "G5"
 addSignal -h 16 /cic_comp_filter_tb/u_cic_comp_filter/clk_vld_in
 addGroup "G6"
 addSignal -h 16 /cic_comp_filter_tb/u_cic_comp_filter/clk_vld_out
-addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 /cic_comp_filter_tb/u_cic_comp_filter/DtoA_dat_in[34:0]
-addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 /cic_comp_filter_tb/u_cic_comp_filter/DtoA_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 76 /cic_comp_filter_tb/u_cic_comp_filter/DtoA_dat_in[34:0]
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 76 /cic_comp_filter_tb/u_cic_comp_filter/DtoA_dat_out[34:0]
 addSignal -h 16 -1COMP -UDEC /cic_comp_filter_tb/u_cic_comp_filter/dat_in[34:0]
 addSignal -h 16 -1COMP -UDEC -holdScope dat_out[34:0]
 addSignal -h 16 -1COMP -UDEC -holdScope dat2[7][64:0]

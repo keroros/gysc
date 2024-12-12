@@ -1,11 +1,6 @@
-simSetSimulator "-vcssv" -exec \
-           "/home/qidc/Nutstore/Project/gysc/adc/cic_comp_filter/QA_DIR/simv" \
-           -args
-debImport "-dbdir" \
-          "/home/qidc/Nutstore/Project/gysc/adc/cic_comp_filter/QA_DIR/simv.daidir"
-debLoadSimResult \
-           /home/qidc/Nutstore/Project/gysc/adc/cic_comp_filter/QA_DIR/rtl.fsdb
 wvCreateWindow
+wvOpenFile -win $_nWave2 \
+           {/home/qidc/Nutstore/Project/gysc/adc/cic_comp_filter/QA_DIR/rtl.fsdb}
 wvRestoreSignal -win $_nWave2 "signal.rc" -overWriteAutoAlias on -appendSignals \
            on
 debExit
