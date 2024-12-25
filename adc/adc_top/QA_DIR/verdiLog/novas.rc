@@ -119,6 +119,7 @@ IfShowModule = {TRUE, FALSE}
 IfFilterPowerAwareInstruments = FALSE
 [DisabledMessages]
 version = Verdi_O-2018.09-SP2
+184615126 = disabled
 [Editor]
 editorName = TurboEditor
 [Emacs]
@@ -231,13 +232,13 @@ version = Verdi_O-2018.09-SP2
 autoSaveSession = FALSE
 TclAutoSource = 
 SyncBrowserDir = TRUE
-verdiAppFont = "Bitstream Vera Sans,-1,18,5,50,0,0,0,0,0", ""
+version = Verdi_O-2018.09-SP2
+verdiMonoFont = "Courier 14"
+verdiAppFont = "Bitstream Vera Sans,-1,16,5,50,0,0,0,0,0", ""
 DblClick = 250
 Find_Delimiter = .
 ViewMouse13Swap = FALSE
 cmd_enter_form = FALSE
-verdiMonoFont = "Courier 18"
-version = Verdi_O-2018.09-SP2
 SignalCaseInSensitive = FALSE
 ShowWndCtntDuringResizing = FALSE
 [GlobalProp]
@@ -390,10 +391,13 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-monoFontDlg = 1107,516,366,432
 SetWindowTimeUnitDialog = 1085,708,433,98
-QwWarnMsgDlg = 992,721,600,250
-QwUserAskDlg = 1138,672,324,166
+monoFontDlg = 1107,553,366,432
+QwWarnMsgDlg = 992,795,600,250
+QwInfoMsgDlg = 930,605,750,250
+saveSigDlg = 1039,559,551,386
+QwUserAskDlg = 1153,665,324,173
+nsWindowManager = 946,550,738,404
 [Relationship]
 hideRecursiceNode = FALSE
 [Session Cache]
@@ -401,7 +405,7 @@ hideRecursiceNode = FALSE
 3 = string (session file name)
 4 = string (session file name)
 5 = string (session file name)
-1 = /home/zzzh/workspace/RISC-V/QA_DIR/verdiLog/novas_autosave.ses
+1 = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/novas_autosave.ses
 [Signal List]
 sigListBackgroundColor = ID_GRAY6
 sigListForegroundColor = ID_BLACK
@@ -435,11 +439,11 @@ scs_mixOption = -vhpi debussy:FSDBDumpCmd
 iscCmdSep = FALSE
 thirdpartyIdx = -1
 simType = vcssv
+interactiveDebugging = TRUE
 NoAppendOption = FALSE
 ScsDebugAll = FALSE
-bSVTBMode = TRUE
+bSVTBMode = FALSE
 SimMode = TRUE
-interactiveDebugging = TRUE
 KeepBreakPoints = FALSE
 [SimulationPlus]
 xlPath = verilog
@@ -468,17 +472,17 @@ iscCmdSep = FALSE
 interactive_fsdb_file = inter.fsdb
 simXLMode = FALSE
 invokeSimPath = work
+vcs_svPath = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/simv
 vcs_svOption = 
 thirdpartyIdx = -1
+simType = vcssv
+interactiveDebugging = TRUE
 NoAppendOption = FALSE
 ScsDebugAll = FALSE
-smartlog = FALSE
-simType = vcssv
-bSVTBMode = TRUE
+bSVTBMode = FALSE
 SimMode = TRUE
-interactiveDebugging = TRUE
 KeepBreakPoints = FALSE
-vcs_svPath = /home/zzzh/workspace/RISC-V/QA_DIR/simv
+smartlog = FALSE
 [SimulationPlus2]
 eventDumpUnfinish = FALSE
 [Source]
@@ -589,10 +593,10 @@ hdlSynopsysComment = ID_GREEN2
 pdmlIdentifier = ID_BLACK
 pdmlCommand = ID_BLACK
 pdmlMacro = ID_BLACK
-font = COURIER18
-annotFont = Helvetica_M_R_14
+font = COURIER14
+annotFont = Helvetica_M_R_12
 [Text.1]
-viewport = 86 34 2428 1368 45
+viewport = 70 27 2490 1376 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -674,8 +678,8 @@ Button3 = "Next ? Time" "#${Arg:Next Time} $stop;.\n"
 Button2 = "Next 1000 Time" "#1000 $stop;.\n"
 Button1 = "Dump All Signals" "$fsdbDumpvars;\n"
 [VIA]
-viaLogViewerDefaultRuleInterForm = "share/VIA/Apps/PredefinedRules/UVM_OVM_i_rule.rc"
 viaLogViewerDefaultRuleOneSearchForm = "share/VIA/Apps/PredefinedRules/Misc/Onesearch_rule.rc"
+viaLogViewerDefaultRuleInterForm = "share/VIA/Apps/PredefinedRules/UVM_OVM_i_rule.rc"
 [VIA.interactiveDebug.preference]
 DefaultDisplayTimeUnit = "1.000000ns"
 DefaultLogTimeUnit = "1.000000ns"
@@ -687,34 +691,34 @@ DefaultLogTimeUnit = "1.000000ns"
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = Type
-width = 60
-visualIndex = 3
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = Message
-width = 2000
-visualIndex = 4
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = Severity
 width = 60
 visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
 name = Time
 width = 60
 visualIndex = 0
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = Code
 width = 60
 visualIndex = 2
 isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = Type
+width = 60
+visualIndex = 3
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = Message
+width = 2000
+visualIndex = 4
+isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 [Vi]
 ViFont = "Clean 14"
@@ -735,7 +739,7 @@ scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
 getSignalForm = 0 0 800 479 100 30 100 30
-viewPort = 0 28 2428 576 394 275
+viewPort = 0 27 2490 992 270 65
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -978,7 +982,7 @@ maskIsolation = TRUE
 maskRetention = TRUE
 maskDrivingPowerOff = TRUE
 maskToggle = TRUE
-autoBackupSignals = off 5 "\"/home/zzzh/workspace/RISC-V/QA_DIR/verdiLog\"" "\"novas_autosave_sig\""
+autoBackupSignals = off 5 "\"/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog\"" "\"novas_autosave_sig\""
 signal_rc_attribute = 65535
 signal_rc_alias_attribute = 0
 ConvertAttr1 = -inc FALSE
@@ -1006,19 +1010,20 @@ curveWindow_Drag&Drop_Mode = TRUE
 hspiceIncOpenMode = TRUE
 pcSelectMode = TRUE
 hierarchyDelimiter = /
-RecentFile1 = "\"/home/zzzh/workspace/RISC-V/QA_DIR/rtl.fsdb\""
+RecentFile1 = "\"/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/rtl.fsdb\""
+RecentFile2 = "\"/home/zzzh/workspace/RISC-V/QA_DIR/rtl.fsdb\""
 open_file_time_range = FALSE
 value_window_aligment = Right
 signal_window_alignment = Auto
 ShowDeltaTime = TRUE
-legend_window_font = -f COURIER18 -c ID_CYAN5
-value_window_font = -f COURIER18 -c ID_CYAN5
-curve_window_font = -f COURIER18 -c ID_CYAN5
-group_name_font = -f COURIER18 -c ID_GREEN5
-ruler_value_font = -f COURIER18 -c ID_CYAN5
-analog_ruler_value_font = -f COURIER18 -c ID_CYAN5
-comment_string_font = -f COURIER18 -c ID_RED5
-getsignal_form_font = -f COURIER18
+legend_window_font = -f COURIER14 -c ID_CYAN5
+value_window_font = -f COURIER14 -c ID_CYAN5
+curve_window_font = -f COURIER14 -c ID_CYAN5
+group_name_font = -f COURIER14 -c ID_GREEN5
+ruler_value_font = -f COURIER14 -c ID_CYAN5
+analog_ruler_value_font = -f COURIER14 -c ID_CYAN5
+comment_string_font = -f COURIER14 -c ID_RED5
+getsignal_form_font = -f COURIER14
 SigsCheckNum = on 1000
 filter_synthesized_net = off n
 filterOutNet = on
@@ -1103,7 +1108,7 @@ InputPinStatus = 1
 OutputPinStatus = 2
 RevisedComponentColor = ID_BLUE5
 SpareCellColor = ID_RED5
-UserName = zzzh
+UserName = qidc
 CommentFormat = Novas ECO updated by ${UserName} ${Date} ${Time}
 PrefixN = eco_n
 PrefixP = eco_p
@@ -1193,7 +1198,7 @@ showCellBitRangeWithAddr = TRUE
 wordsShownInOneRow = 8
 syncCursorTime = FALSE
 fixCellColumnWidth = FALSE
-font = Courier 18
+font = Courier 14
 [planColors]
 plan_fillColor_inactive = lightGray
 plan_fillColor_warning = orange
@@ -1612,7 +1617,7 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 0 28 2428 576 394 275
+viewPort = 0 27 2490 992 270 65
 [wave.1]
 viewPort = 127 219 960 332 100 65
 [wave.2]

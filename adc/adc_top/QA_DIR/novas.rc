@@ -228,17 +228,18 @@ Selection-LineWidth = 1
 Orientation = Landscape
 [Form]
 version = Verdi_O-2018.09-SP2
+wave/unknownSave.fm = 100,100,520,275
 [General]
 autoSaveSession = FALSE
 TclAutoSource = 
 SyncBrowserDir = TRUE
-version = Verdi_O-2018.09-SP2
-verdiMonoFont = "Courier 14"
 verdiAppFont = "Bitstream Vera Sans,-1,16,5,50,0,0,0,0,0", ""
 DblClick = 250
 Find_Delimiter = .
 ViewMouse13Swap = FALSE
 cmd_enter_form = FALSE
+verdiMonoFont = "Courier 14"
+version = Verdi_O-2018.09-SP2
 SignalCaseInSensitive = FALSE
 ShowWndCtntDuringResizing = FALSE
 [GlobalProp]
@@ -394,10 +395,10 @@ savePropDtl = TRUE
 SetWindowTimeUnitDialog = 1085,708,433,98
 monoFontDlg = 1107,553,366,432
 QwWarnMsgDlg = 992,795,600,250
-QwInfoMsgDlg = 930,605,750,250
 saveSigDlg = 1039,559,551,386
-QwUserAskDlg = 1153,665,324,173
 nsWindowManager = 946,550,738,404
+QwInfoMsgDlg = 930,642,750,250
+QwUserAskDlg = 1153,682,324,140
 [Relationship]
 hideRecursiceNode = FALSE
 [Session Cache]
@@ -439,11 +440,11 @@ scs_mixOption = -vhpi debussy:FSDBDumpCmd
 iscCmdSep = FALSE
 thirdpartyIdx = -1
 simType = vcssv
-interactiveDebugging = TRUE
 NoAppendOption = FALSE
 ScsDebugAll = FALSE
-bSVTBMode = FALSE
+bSVTBMode = TRUE
 SimMode = TRUE
+interactiveDebugging = TRUE
 KeepBreakPoints = FALSE
 [SimulationPlus]
 xlPath = verilog
@@ -472,17 +473,17 @@ iscCmdSep = FALSE
 interactive_fsdb_file = inter.fsdb
 simXLMode = FALSE
 invokeSimPath = work
-vcs_svPath = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/simv
-vcs_svOption =  
+vcs_svOption = 
 thirdpartyIdx = -1
-simType = vcssv
-interactiveDebugging = TRUE
 NoAppendOption = FALSE
 ScsDebugAll = FALSE
-bSVTBMode = FALSE
-SimMode = TRUE
-KeepBreakPoints = FALSE
 smartlog = FALSE
+simType = vcssv
+bSVTBMode = TRUE
+SimMode = TRUE
+interactiveDebugging = TRUE
+KeepBreakPoints = FALSE
+vcs_svPath = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/simv
 [SimulationPlus2]
 eventDumpUnfinish = FALSE
 [Source]
@@ -678,8 +679,8 @@ Button3 = "Next ? Time" "#${Arg:Next Time} $stop;.\n"
 Button2 = "Next 1000 Time" "#1000 $stop;.\n"
 Button1 = "Dump All Signals" "$fsdbDumpvars;\n"
 [VIA]
-viaLogViewerDefaultRuleOneSearchForm = "share/VIA/Apps/PredefinedRules/Misc/Onesearch_rule.rc"
 viaLogViewerDefaultRuleInterForm = "share/VIA/Apps/PredefinedRules/UVM_OVM_i_rule.rc"
+viaLogViewerDefaultRuleOneSearchForm = "share/VIA/Apps/PredefinedRules/Misc/Onesearch_rule.rc"
 [VIA.interactiveDebug.preference]
 DefaultDisplayTimeUnit = "1.000000ns"
 DefaultLogTimeUnit = "1.000000ns"
@@ -691,34 +692,34 @@ DefaultLogTimeUnit = "1.000000ns"
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = Severity
-width = 60
-visualIndex = 1
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = Time
-width = 60
-visualIndex = 0
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
-name = Code
-width = 60
-visualIndex = 2
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
 name = Type
 width = 60
 visualIndex = 3
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
 name = Message
 width = 2000
 visualIndex = 4
 isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+name = Time
+width = 60
+visualIndex = 0
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = Code
+width = 60
+visualIndex = 2
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = Severity
+width = 60
+visualIndex = 1
+isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [Vi]
 ViFont = "Clean 14"
@@ -739,7 +740,7 @@ scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
 getSignalForm = 0 0 800 479 100 30 100 30
-viewPort = 0 27 2490 992 270 65
+viewPort = 0 27 2490 647 270 65
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -1214,13 +1215,13 @@ tsClkSkewSave = True
 tsClkSkewSetting = 0
 tsMaxForLoopToUnroll = 0
 tsBBoxSave = True
-tsBBoxSetting =  
+tsBBoxSetting = 
 tsBBoxEmptyModule = False
 tsBBoxIgnoreProtected = False
 tsIPSave = True
-tsIPSetting =  
-tsSymLibSetting =  
-tsSimModelSetting =  
+tsIPSetting = 
+tsSymLibSetting = 
+tsSimModelSetting = 
 tsCellModelSetting = 0
 tsContBAError = FALSE
 tsMaxLeafNum = 32768
@@ -1617,7 +1618,7 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 0 27 2490 992 270 65
+viewPort = 0 27 2490 647 270 65
 [wave.1]
 viewPort = 127 219 960 332 100 65
 [wave.2]
