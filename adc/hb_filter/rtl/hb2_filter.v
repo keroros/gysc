@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/12/12 11:25
-// Last Modified : 2024/12/12 11:31
+// Last Modified : 2024/12/26 19:51
 // File Name     : hb2_filter.v
 // Description   :
 //         
@@ -33,122 +33,309 @@ module hb2_filter (
     output  reg signed  [34:0]  dat_out      
 );
 
-//-------------------------------------------
-reg     signed  [34:0]      dat0_r[37:0]    ;
-reg     signed  [34:0]      dat1_r[18:0]    ;
-wire    signed  [64:0]      dat2[19:0]      ;
-wire    signed  [64:0]      dat3            ;
-wire    signed  [34:0]      dat4            ;
-reg                         cnt             ;
-wire                        clk_vld_out_0   ;
-wire                        clk_vld_out_1   ;
-genvar                      ii              ;
+    //-------------------------------------------
+    reg     signed  [34:0]      dat0_r[37:0]    ;
+    reg     signed  [34:0]      dat1_r[18:0]    ;
+    wire    signed  [64:0]      dat2[19:0]      ;
+    wire    signed  [64:0]      dat3            ;
+    wire    signed  [34:0]      dat4            ;
+    reg                         cnt             ;
+    wire                        clk_vld_out_0   ;
+    wire                        clk_vld_out_1   ;
+    genvar                      ii              ;
+    
+    //-------------------------------------------
+    always @(posedge clk or negedge rstn) begin
+        if (!rstn)
+            dat1_r[0]    <= 35'd0;
+        else if (clk_vld_out_1)
+            dat1_r[0]    <= dat_in;
+    end
+    
+    generate
+    for (ii=1;ii<=18;ii=ii+1)
+    always @(posedge clk or negedge rstn) begin
+        if (!rstn)
+            dat1_r[ii]  <= 35'd0;
+        else if (clk_vld_out_1)
+            dat1_r[ii]  <= dat1_r[ii-1];
+    end
+    endgenerate
+    
+    always @(posedge clk or negedge rstn) begin
+        if (!rstn)
+            dat0_r[0]    <= 35'd0;
+        else if (clk_vld_out_0)
+            dat0_r[0]    <= dat_in;
+    end
+    
+    generate
+    for (ii=1;ii<=37;ii=ii+1)
+    always @(posedge clk or negedge rstn) begin
+        if (!rstn)
+            dat0_r[ii]  <= 35'd0;
+        else if (clk_vld_out_0)
+            dat0_r[ii]  <= dat0_r[ii-1];
+    end
+    endgenerate
+    
+    //---------------------------------------------------------
+    always @(posedge clk or negedge rstn) begin
+        if (!rstn)
+            cnt <= 1'b0;
+        else if (clk_vld_in)
+            cnt <= ~cnt;
+    end
+    
+    assign clk_vld_out_0 = clk_vld_in & (~cnt);
+    assign clk_vld_out_1 = clk_vld_in & cnt;
+    
+/*----------------  by Qidc 2024-12-26  ---------------------
+    assign dat2[0]  = (dat0_r[0]  + dat0_r[37]) * signed'(31'd3870     ); 
+    assign dat2[1]  = (dat0_r[1]  + dat0_r[36]) * signed'(31'd16305    );
+    assign dat2[2]  = (dat0_r[2]  + dat0_r[35]) * signed'(31'd48553    );
+    assign dat2[3]  = (dat0_r[3]  + dat0_r[34]) * signed'(31'd119259   );
+    assign dat2[4]  = (dat0_r[4]  + dat0_r[33]) * signed'(31'd257820   );
+    assign dat2[5]  = (dat0_r[5]  + dat0_r[32]) * signed'(31'd507429   );
+    assign dat2[6]  = (dat0_r[6]  + dat0_r[31]) * signed'(31'd928131   );
+    assign dat2[7]  = (dat0_r[7]  + dat0_r[30]) * signed'(31'd1599799  );
+    assign dat2[8]  = (dat0_r[8]  + dat0_r[29]) * signed'(31'd2625321  );
+    assign dat2[9]  = (dat0_r[9]  + dat0_r[28]) * signed'(31'd4135001  );
+    assign dat2[10] = (dat0_r[10] + dat0_r[27]) * signed'(31'd6294535  );
+    assign dat2[11] = (dat0_r[11] + dat0_r[26]) * signed'(31'd9321690  );
+    assign dat2[12] = (dat0_r[12] + dat0_r[25]) * signed'(31'd13522985 );
+    assign dat2[13] = (dat0_r[13] + dat0_r[24]) * signed'(31'd19377524 );
+    assign dat2[14] = (dat0_r[14] + dat0_r[23]) * signed'(31'd27742080 );
+    assign dat2[15] = (dat0_r[15] + dat0_r[22]) * signed'(31'd40418827 );
+    assign dat2[16] = (dat0_r[16] + dat0_r[21]) * signed'(31'd62096704 );
+    assign dat2[17] = (dat0_r[17] + dat0_r[20]) * signed'(31'd110065333);
+    assign dat2[18] = (dat0_r[18] + dat0_r[19]) * signed'(31'd340477051);
+    assign dat2[19] = dat1_r[18] * signed'(31'd536870912);
+------------------  by Qidc 2024-12-26  -------------------*/
+    
+    wire [34:0] x[0:19];
+    
+    assign x[0]  =  dat0_r[0]  + dat0_r[37];
+    assign x[1]  =  dat0_r[1]  + dat0_r[36];
+    assign x[2]  =  dat0_r[2]  + dat0_r[35];
+    assign x[3]  =  dat0_r[3]  + dat0_r[34];
+    assign x[4]  =  dat0_r[4]  + dat0_r[33];
+    assign x[5]  =  dat0_r[5]  + dat0_r[32];
+    assign x[6]  =  dat0_r[6]  + dat0_r[31];
+    assign x[7]  =  dat0_r[7]  + dat0_r[30];
+    assign x[8]  =  dat0_r[8]  + dat0_r[29];
+    assign x[9]  =  dat0_r[9]  + dat0_r[28];
+    assign x[10] =  dat0_r[10] + dat0_r[27];
+    assign x[11] =  dat0_r[11] + dat0_r[26];
+    assign x[12] =  dat0_r[12] + dat0_r[25];
+    assign x[13] =  dat0_r[13] + dat0_r[24];
+    assign x[14] =  dat0_r[14] + dat0_r[23];
+    assign x[15] =  dat0_r[15] + dat0_r[22];
+    assign x[16] =  dat0_r[16] + dat0_r[21];
+    assign x[17] =  dat0_r[17] + dat0_r[20];
+    assign x[18] =  dat0_r[18] + dat0_r[19];
+    assign x[19] =  dat1_r[18];
 
-//-------------------------------------------
-always @(posedge clk or negedge rstn) begin
-    if (!rstn)
-        dat1_r[0]    <= 35'd0;
-    else if (clk_vld_out_1)
-        dat1_r[0]    <= dat_in;
-end
+    assign dat2[0] = {{18{x[0][34]}}, x[0], 12'b0}
+                   - {{22{x[0][34]}}, x[0], 8'b0}
+                   + {{25{x[0][34]}}, x[0], 5'b0}
+                   - {{29{x[0][34]}}, x[0], 1'b0};
+    assign dat2[1] = {{16{x[1][34]}}, x[1], 14'b0}
+                   - {{23{x[1][34]}}, x[1], 7'b0}
+                   + {{25{x[1][34]}}, x[1], 5'b0}
+                   + {{26{x[1][34]}}, x[1], 4'b0}
+                   + {x[1]};
+    assign dat2[2] = {{15{x[2][34]}}, x[2], 15'b0}
+                   + {{16{x[2][34]}}, x[2], 14'b0}
+                   - {{20{x[2][34]}}, x[2], 10'b0}
+                   + {{22{x[2][34]}}, x[2], 8'b0}
+                   + {{23{x[2][34]}}, x[2], 7'b0}
+                   + {{25{x[2][34]}}, x[2], 5'b0}
+                   + {{27{x[2][34]}}, x[2], 3'b0}
+                   + {x[2]};
+    assign dat2[3] = {{13{x[3][34]}}, x[3], 17'b0}
+                   - {{16{x[3][34]}}, x[3], 14'b0}
+                   + {{18{x[3][34]}}, x[3], 12'b0}
+                   + {{21{x[3][34]}}, x[3], 9'b0}
+                   - {{24{x[3][34]}}, x[3], 6'b0}
+                   + {{26{x[3][34]}}, x[3], 4'b0}
+                   + {{27{x[3][34]}}, x[3], 3'b0}
+                   + {{29{x[3][34]}}, x[3], 1'b0}
+                   + {x[3]};
+    assign dat2[4] = {{12{x[4][34]}}, x[4], 18'b0}
+                   - {{17{x[4][34]}}, x[4], 13'b0}
+                   + {{18{x[4][34]}}, x[4], 12'b0}
+                   - {{22{x[4][34]}}, x[4], 8'b0}
+                   + {{25{x[4][34]}}, x[4], 5'b0}
+                   - {{28{x[4][34]}}, x[4], 2'b0};
+    assign dat2[5] = {{11{x[5][34]}}, x[5], 19'b0}
+                   - {{15{x[5][34]}}, x[5], 15'b0}
+                   + {{16{x[5][34]}}, x[5], 14'b0}
+                   - {{21{x[5][34]}}, x[5], 9'b0}
+                   + {{25{x[5][34]}}, x[5], 5'b0}
+                   + {{28{x[5][34]}}, x[5], 2'b0}
+                   + {x[5]};
+    assign dat2[6] = {{10{x[6][34]}}, x[6], 20'b0}
+                   - {{13{x[6][34]}}, x[6], 17'b0}
+                   + {{17{x[6][34]}}, x[6], 13'b0}
+                   + {{19{x[6][34]}}, x[6], 11'b0}
+                   + {{22{x[6][34]}}, x[6], 8'b0}
+                   + {{23{x[6][34]}}, x[6], 7'b0}
+                   + {{29{x[6][34]}}, x[6], 1'b0}
+                   + {x[6]};
+    assign dat2[7] = {{10{x[7][34]}}, x[7], 20'b0}
+                   + {{11{x[7][34]}}, x[7], 19'b0}
+                   + {{16{x[7][34]}}, x[7], 14'b0}
+                   + {{17{x[7][34]}}, x[7], 13'b0}
+                   + {{19{x[7][34]}}, x[7], 11'b0}
+                   + {{22{x[7][34]}}, x[7], 8'b0}
+                   + {{25{x[7][34]}}, x[7], 5'b0}
+                   + {{26{x[7][34]}}, x[7], 4'b0}
+                   + {{27{x[7][34]}}, x[7], 3'b0}
+                   - {x[7]};
+    assign dat2[8] = {{9{x[8][34]}}, x[8], 21'b0}
+                   + {{11{x[8][34]}}, x[8], 19'b0}
+                   + {{18{x[8][34]}}, x[8], 12'b0}
+                   - {{22{x[8][34]}}, x[8], 8'b0}
+                   + {{25{x[8][34]}}, x[8], 5'b0}
+                   + {{27{x[8][34]}}, x[8], 3'b0}
+                   + {x[8]};
+    assign dat2[9] = {{8{x[9][34]}}, x[9], 22'b0}
+                   - {{14{x[9][34]}}, x[9], 16'b0}
+                   + {{18{x[9][34]}}, x[9], 12'b0}
+                   + {{19{x[9][34]}}, x[9], 11'b0}
+                   + {{24{x[9][34]}}, x[9], 6'b0}
+                   + {{26{x[9][34]}}, x[9], 4'b0}
+                   + {{27{x[9][34]}}, x[9], 3'b0}
+                   + {x[9]};
+    assign dat2[10] = {{8{x[10][34]}}, x[10], 22'b0}
+                    + {{9{x[10][34]}}, x[10], 21'b0}
+                    + {{19{x[10][34]}}, x[10], 11'b0}
+                    + {{20{x[10][34]}}, x[10], 10'b0}
+                    + {{27{x[10][34]}}, x[10], 3'b0}
+                    - {x[10]};
+    assign dat2[11] = {{7{x[11][34]}}, x[11], 23'b0}
+                    + {{10{x[11][34]}}, x[11], 20'b0}
+                    - {{13{x[11][34]}}, x[11], 17'b0}
+                    + {{16{x[11][34]}}, x[11], 14'b0}
+                    - {{20{x[11][34]}}, x[11], 10'b0}
+                    + {{23{x[11][34]}}, x[11], 7'b0}
+                    + {{24{x[11][34]}}, x[11], 6'b0}
+                    + {{26{x[11][34]}}, x[11], 4'b0}
+                    + {{27{x[11][34]}}, x[11], 3'b0}
+                    + {{29{x[11][34]}}, x[11], 1'b0};
+    assign dat2[12] = {{7{x[12][34]}}, x[12], 23'b0}
+                    + {{8{x[12][34]}}, x[12], 22'b0}
+                    + {{10{x[12][34]}}, x[12], 20'b0}
+                    - {{13{x[12][34]}}, x[12], 17'b0}
+                    + {{16{x[12][34]}}, x[12], 14'b0}
+                    + {{18{x[12][34]}}, x[12], 12'b0}
+                    + {{19{x[12][34]}}, x[12], 11'b0}
+                    + {{25{x[12][34]}}, x[12], 5'b0}
+                    + {{27{x[12][34]}}, x[12], 3'b0}
+                    + {x[12]};
+    assign dat2[13] = {{6{x[13][34]}}, x[13], 24'b0}
+                    + {{9{x[13][34]}}, x[13], 21'b0}
+                    + {{11{x[13][34]}}, x[13], 19'b0}
+                    - {{15{x[13][34]}}, x[13], 15'b0}
+                    + {{17{x[13][34]}}, x[13], 13'b0}
+                    + {{19{x[13][34]}}, x[13], 11'b0}
+                    + {{20{x[13][34]}}, x[13], 10'b0}
+                    + {{22{x[13][34]}}, x[13], 8'b0}
+                    + {{23{x[13][34]}}, x[13], 7'b0}
+                    - {{26{x[13][34]}}, x[13], 4'b0}
+                    + {{28{x[13][34]}}, x[13], 2'b0};
+    assign dat2[14] = {{6{x[14][34]}}, x[14], 24'b0}
+                    + {{7{x[14][34]}}, x[14], 23'b0}
+                    + {{9{x[14][34]}}, x[14], 21'b0}
+                    + {{11{x[14][34]}}, x[14], 19'b0}
+                    - {{14{x[14][34]}}, x[14], 16'b0}
+                    + {{16{x[14][34]}}, x[14], 14'b0}
+                    + {{18{x[14][34]}}, x[14], 12'b0}
+                    - {{23{x[14][34]}}, x[14], 7'b0};
+    assign dat2[15] = {{5{x[15][34]}}, x[15], 25'b0}
+                    + {{8{x[15][34]}}, x[15], 22'b0}
+                    + {{9{x[15][34]}}, x[15], 21'b0}
+                    + {{11{x[15][34]}}, x[15], 19'b0}
+                    + {{15{x[15][34]}}, x[15], 15'b0}
+                    + {{16{x[15][34]}}, x[15], 14'b0}
+                    - {{21{x[15][34]}}, x[15], 9'b0}
+                    + {{27{x[15][34]}}, x[15], 3'b0}
+                    + {{29{x[15][34]}}, x[15], 1'b0}
+                    + {x[15]};
+    assign dat2[16] = {{4{x[16][34]}}, x[16], 26'b0}
+                    - {{7{x[16][34]}}, x[16], 23'b0}
+                    + {{9{x[16][34]}}, x[16], 21'b0}
+                    + {{10{x[16][34]}}, x[16], 20'b0}
+                    + {{12{x[16][34]}}, x[16], 18'b0}
+                    - {{15{x[16][34]}}, x[16], 15'b0}
+                    + {{20{x[16][34]}}, x[16], 10'b0}
+                    + {{22{x[16][34]}}, x[16], 8'b0}
+                    + {{24{x[16][34]}}, x[16], 6'b0};
+    assign dat2[17] = {{4{x[17][34]}}, x[17], 26'b0}
+                    + {{5{x[17][34]}}, x[17], 25'b0}
+                    + {{7{x[17][34]}}, x[17], 23'b0}
+                    + {{10{x[17][34]}}, x[17], 20'b0}
+                    - {{14{x[17][34]}}, x[17], 16'b0}
+                    + {{15{x[17][34]}}, x[17], 15'b0}
+                    - {{18{x[17][34]}}, x[17], 12'b0}
+                    + {{20{x[17][34]}}, x[17], 10'b0}
+                    + {{21{x[17][34]}}, x[17], 9'b0}
+                    + {{23{x[17][34]}}, x[17], 7'b0}
+                    + {{25{x[17][34]}}, x[17], 5'b0}
+                    + {{26{x[17][34]}}, x[17], 4'b0}
+                    + {{28{x[17][34]}}, x[17], 2'b0}
+                    + {x[17]};
+    assign dat2[18] = {{2{x[18][34]}}, x[18], 28'b0}
+                    + {{4{x[18][34]}}, x[18], 26'b0}
+                    + {{8{x[18][34]}}, x[18], 22'b0}
+                    + {{11{x[18][34]}}, x[18], 19'b0}
+                    + {{13{x[18][34]}}, x[18], 17'b0}
+                    + {{14{x[18][34]}}, x[18], 16'b0}
+                    + {{16{x[18][34]}}, x[18], 14'b0}
+                    + {{20{x[18][34]}}, x[18], 10'b0}
+                    + {{23{x[18][34]}}, x[18], 7'b0}
+                    - {{27{x[18][34]}}, x[18], 3'b0}
+                    + {{29{x[18][34]}}, x[18], 1'b0}
+                    + {x[18]};
+    assign dat2[19] = {{1{x[19][34]}}, x[19], 29'b0};
 
-generate
-for (ii=1;ii<=18;ii=ii+1)
-always @(posedge clk or negedge rstn) begin
-    if (!rstn)
-        dat1_r[ii]  <= 35'd0;
-    else if (clk_vld_out_1)
-        dat1_r[ii]  <= dat1_r[ii-1];
-end
-endgenerate
-
-always @(posedge clk or negedge rstn) begin
-    if (!rstn)
-        dat0_r[0]    <= 35'd0;
-    else if (clk_vld_out_0)
-        dat0_r[0]    <= dat_in;
-end
-
-generate
-for (ii=1;ii<=37;ii=ii+1)
-always @(posedge clk or negedge rstn) begin
-    if (!rstn)
-        dat0_r[ii]  <= 35'd0;
-    else if (clk_vld_out_0)
-        dat0_r[ii]  <= dat0_r[ii-1];
-end
-endgenerate
-
-//---------------------------------------------------------
-always @(posedge clk or negedge rstn) begin
-    if (!rstn)
-        cnt <= 1'b0;
-    else if (clk_vld_in)
-        cnt <= ~cnt;
-end
-
-assign clk_vld_out_0 = clk_vld_in & (~cnt);
-assign clk_vld_out_1 = clk_vld_in & cnt;
-
-//---------------------------------------------------------
-assign dat2[0]  = (dat0_r[0]  + dat0_r[37]) * signed'(31'd3870     ); 
-assign dat2[1]  = (dat0_r[1]  + dat0_r[36]) * signed'(31'd16305    );
-assign dat2[2]  = (dat0_r[2]  + dat0_r[35]) * signed'(31'd48553    );
-assign dat2[3]  = (dat0_r[3]  + dat0_r[34]) * signed'(31'd119259   );
-assign dat2[4]  = (dat0_r[4]  + dat0_r[33]) * signed'(31'd257820   );
-assign dat2[5]  = (dat0_r[5]  + dat0_r[32]) * signed'(31'd507429   );
-assign dat2[6]  = (dat0_r[6]  + dat0_r[31]) * signed'(31'd928131   );
-assign dat2[7]  = (dat0_r[7]  + dat0_r[30]) * signed'(31'd1599799  );
-assign dat2[8]  = (dat0_r[8]  + dat0_r[29]) * signed'(31'd2625321  );
-assign dat2[9]  = (dat0_r[9]  + dat0_r[28]) * signed'(31'd4135001  );
-assign dat2[10] = (dat0_r[10] + dat0_r[27]) * signed'(31'd6294535  );
-assign dat2[11] = (dat0_r[11] + dat0_r[26]) * signed'(31'd9321690  );
-assign dat2[12] = (dat0_r[12] + dat0_r[25]) * signed'(31'd13522985 );
-assign dat2[13] = (dat0_r[13] + dat0_r[24]) * signed'(31'd19377524 );
-assign dat2[14] = (dat0_r[14] + dat0_r[23]) * signed'(31'd27742080 );
-assign dat2[15] = (dat0_r[15] + dat0_r[22]) * signed'(31'd40418827 );
-assign dat2[16] = (dat0_r[16] + dat0_r[21]) * signed'(31'd62096704 );
-assign dat2[17] = (dat0_r[17] + dat0_r[20]) * signed'(31'd110065333);
-assign dat2[18] = (dat0_r[18] + dat0_r[19]) * signed'(31'd340477051);
-assign dat2[19] = dat1_r[18] * signed'(31'd536870912);
-
-assign dat3 =   +dat2[0] 
-                -dat2[1] 
-                +dat2[2]
-                -dat2[3]
-                +dat2[4]
-                -dat2[5]
-                +dat2[6]
-                -dat2[7]
-                +dat2[8]
-                -dat2[9]
-                +dat2[10]
-                -dat2[11]
-                +dat2[12]
-                -dat2[13]
-                +dat2[14]
-                -dat2[15]
-                +dat2[16]
-                -dat2[17]
-                +dat2[18]
-                +dat2[19];
-
-assign dat4 = dat3 >>> 30;
-
-always @(posedge clk or negedge rstn) begin
-    if (!rstn)
-        dat_out <= 35'd0;
-    else if (clk_vld_out_1)
-        dat_out <= dat4;
-end
-
-always @(posedge clk or negedge rstn) begin
-    if (!rstn)
-        clk_vld_out <= 1'b0;
-    else
-        clk_vld_out <= clk_vld_out_1;
-end
-
-
+    assign dat3 = +dat2[0] 
+                  -dat2[1] 
+                  +dat2[2]
+                  -dat2[3]
+                  +dat2[4]
+                  -dat2[5]
+                  +dat2[6]
+                  -dat2[7]
+                  +dat2[8]
+                  -dat2[9]
+                  +dat2[10]
+                  -dat2[11]
+                  +dat2[12]
+                  -dat2[13]
+                  +dat2[14]
+                  -dat2[15]
+                  +dat2[16]
+                  -dat2[17]
+                  +dat2[18]
+                  +dat2[19];
+    
+    assign dat4 = dat3 >>> 30;
+    
+    always @(posedge clk or negedge rstn) begin
+        if (!rstn)
+            dat_out <= 35'd0;
+        else if (clk_vld_out_1)
+            dat_out <= dat4;
+    end
+    
+    always @(posedge clk or negedge rstn) begin
+        if (!rstn)
+            clk_vld_out <= 1'b0;
+        else
+            clk_vld_out <= clk_vld_out_1;
+    end
+    
+    
 endmodule
-

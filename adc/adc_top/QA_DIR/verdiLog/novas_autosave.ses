@@ -19,15 +19,15 @@ Console = FALSE
 powerDumped = 0
 [hb]
 postSimFile = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/rtl.fsdb
-syncTime = 0
-viewport = 70 27 2490 1376 0 0 926 2488
-activeNode = "adc_top_tb.u_adc_top.u_hb1_filter"
-activeScope = "adc_top_tb.u_adc_top.u_hb1_filter"
-activeFile = "/home/qidc/Nutstore/Project/gysc/adc/hb_filter/rtl/hb1_filter.v"
+syncTime = 339875000
+viewport = 70 27 2490 1376 0 0 249 2488
+activeNode = "adc_top_tb.u_adc_top.u_hb2_filter"
+activeScope = "adc_top_tb.u_adc_top.u_hb2_filter"
+activeFile = "/home/qidc/Nutstore/Project/gysc/adc/hb_filter/rtl/hb2_filter.v"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 83
+sourceBeginLine = 26
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -44,23 +44,23 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "adc_top_tb.u_adc_top.u_hb1_filter"
-multipleSelection = 2 92 3 0 0 103 3 0 0
+Scope1 = "adc_top_tb.u_adc_top.u_hb2_filter"
+multipleSelection = 1 26 2 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-dbdir" "/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/simv.daidir" 
 invokeDir = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR
 [hb.sourceTab.1]
-scope = adc_top_tb.u_adc_top.u_hb1_filter
-File = /home/qidc/Nutstore/Project/gysc/adc/hb_filter/rtl/hb1_filter.v
-Line = 84
+scope = adc_top_tb.u_adc_top.u_hb2_filter
+File = /home/qidc/Nutstore/Project/gysc/adc/hb_filter/rtl/hb2_filter.v
+Line = 27
 [nMemoryManager]
 WaveformFile = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/rtl.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 2490 647 270 65
+viewPort = 0 27 2490 845 270 65
 primaryWindow = TRUE
 SessionFile = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE
