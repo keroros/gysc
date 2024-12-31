@@ -1,58 +1,98 @@
 version: (200506)
 
 available memory: 64M bytes
-used memory: 327680 bytes [need 320K bytes if disable swap]
+used memory: 73728 bytes [need 72K bytes if disable swap]
 
-used block: 12 [memory(12) file(0)]
-                 [ 8K(8) 64K(4) { total 320K bytes } ]
-overhead: (9522) bytes for (12) blocks [Average: (793) bytes/block]
+used block: 2 [memory(2) file(0)]
+                 [ 8K(1) 64K(1) { total 72K bytes } ]
+overhead: (9522) bytes for (2) blocks [Average: (4761) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 4(times) 39K(bytes) [8K bytes compressed data from file]
-access => 283807(times) 2236M(bytes)
-          [hit ratio: 99.9986%]
+read   => 1(times) 5K(bytes) [1K bytes compressed data from file]
+access => 78394(times) 615M(bytes)
+          [hit ratio: 99.9987%]
 
 time: write(0) read(0)  unit: second
 
 swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (5)
+used swap file number: (1)
 
 
 
 swap file manager:
 arrSize: (256)
-idxCnt: (6)
+idxCnt: (3)
 closeHead: (1)
-closeTail: (5)
+closeTail: (2)
 openCnt: (1)
-fid(5): fd(0) fileName(NULL)
-	mode(rb)	hot(4) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(rb)	hot(3) cool(5) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(rb)	hot(1) cool(4) pos(0)
-fid(2): fd(29) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735176876)
-	mode(w+b)	hot(3) cool(1) pos(0)
+fid(2): fd(29) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#212659)
+	size(0) lastModTime(0) curModTime(1735538342)
+	mode(w+b)	hot(0) cool(1) pos(0)
 fid(1): fd(0) fileName(NULL)
-	mode(rb)	hot(2) cool(3) pos(0)
+	mode(rb)	hot(2) cool(0) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 10:39:29 2024
+Swap system is reset at (Mon Dec 30 14:25:15 2024
 )
 version: (200506)
 
 available memory: 64M bytes
-used memory: 524288 bytes [need 320K bytes if disable swap]
+used memory: 385024 bytes [need 304K bytes if disable swap]
 
-used block: 22 [memory(22) file(0)]
-                 [ 8K(16) 64K(6) { total 512K bytes } ]
-overhead: (9522) bytes for (22) blocks [Average: (432) bytes/block]
+used block: 12 [memory(12) file(0)]
+                 [ 8K(7) 64K(5) { total 376K bytes } ]
+overhead: (9522) bytes for (12) blocks [Average: (793) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 6(times) 82K(bytes) [15K bytes compressed data from file]
-access => 451471(times) 3563M(bytes)
-          [hit ratio: 99.9987%]
+read   => 5(times) 66K(bytes) [12K bytes compressed data from file]
+access => 136134(times) 1080M(bytes)
+          [hit ratio: 99.9963%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
+used swap file number: (7)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (8)
+closeHead: (3)
+closeTail: (7)
+openCnt: (1)
+fid(7): fd(0) fileName(NULL)
+	mode(rb)	hot(6) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(rb)	hot(5) cool(7) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(rb)	hot(3) cool(6) pos(0)
+fid(4): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#212659)
+	size(0) lastModTime(0) curModTime(1735539915)
+	mode(w+b)	hot(5) cool(3) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(rb)	hot(4) cool(5) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Mon Dec 30 14:25:29 2024
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 499712 bytes [need 304K bytes if disable swap]
+
+used block: 19 [memory(19) file(0)]
+                 [ 8K(13) 64K(6) { total 488K bytes } ]
+overhead: (9522) bytes for (19) blocks [Average: (501) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 6(times) 105K(bytes) [17K bytes compressed data from file]
+access => 216007(times) 1712M(bytes)
+          [hit ratio: 99.9972%]
 
 time: write(0) read(0)  unit: second
 
@@ -63,17 +103,19 @@ used swap file number: (8)
 
 swap file manager:
 arrSize: (256)
-idxCnt: (9)
-closeHead: (6)
-closeTail: (8)
+idxCnt: (10)
+closeHead: (8)
+closeTail: (9)
 openCnt: (1)
+fid(9): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#212659)
+	size(0) lastModTime(0) curModTime(1735539930)
+	mode(w+b)	hot(0) cool(8) pos(0)
 fid(8): fd(0) fileName(NULL)
-	mode(rb)	hot(6) cool(0) pos(0)
-fid(7): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735180769)
-	mode(w+b)	hot(8) cool(6) pos(0)
+	mode(rb)	hot(9) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
 fid(6): fd(0) fileName(NULL)
-	mode(rb)	hot(7) cool(8) pos(0)
+	mode(NULL)	hot(0) cool(0) pos(0)
 fid(5): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(4): fd(0) fileName(NULL)
@@ -86,40 +128,42 @@ fid(1): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 10:39:40 2024
+Swap system is reset at (Mon Dec 30 14:29:36 2024
 )
 version: (200506)
 
 available memory: 64M bytes
-used memory: 630784 bytes [need 320K bytes if disable swap]
+used memory: 606208 bytes [need 304K bytes if disable swap]
 
-used block: 28 [memory(28) file(0)]
-                 [ 8K(21) 64K(7) { total 616K bytes } ]
-overhead: (9522) bytes for (28) blocks [Average: (340) bytes/block]
+used block: 25 [memory(25) file(0)]
+                 [ 8K(18) 64K(7) { total 592K bytes } ]
+overhead: (9522) bytes for (25) blocks [Average: (380) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 7(times) 109K(bytes) [19K bytes compressed data from file]
-access => 551509(times) 4354M(bytes)
-          [hit ratio: 99.9987%]
+read   => 7(times) 141K(bytes) [22K bytes compressed data from file]
+access => 339177(times) 2683M(bytes)
+          [hit ratio: 99.9979%]
 
 time: write(0) read(0)  unit: second
 
 swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (9)
+used swap file number: (10)
 
 
 
 swap file manager:
 arrSize: (256)
-idxCnt: (11)
-closeHead: (9)
-closeTail: (10)
+idxCnt: (12)
+closeHead: (10)
+closeTail: (11)
 openCnt: (1)
-fid(10): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735180780)
-	mode(w+b)	hot(0) cool(9) pos(0)
+fid(11): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#212659)
+	size(0) lastModTime(0) curModTime(1735540176)
+	mode(w+b)	hot(0) cool(10) pos(0)
+fid(10): fd(0) fileName(NULL)
+	mode(rb)	hot(11) cool(0) pos(0)
 fid(9): fd(0) fileName(NULL)
-	mode(rb)	hot(10) cool(0) pos(0)
+	mode(NULL)	hot(0) cool(0) pos(0)
 fid(8): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(7): fd(0) fileName(NULL)
@@ -138,158 +182,98 @@ fid(1): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 10:42:12 2024
+Swap system is reset at (Mon Dec 30 14:36:18 2024
 )
 version: (200506)
 
 available memory: 64M bytes
-used memory: 778240 bytes [need 320K bytes if disable swap]
+used memory: 737280 bytes [need 304K bytes if disable swap]
+
+used block: 34 [memory(34) file(0)]
+                 [ 8K(26) 64K(8) { total 720K bytes } ]
+overhead: (9522) bytes for (34) blocks [Average: (280) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 8(times) 180K(bytes) [27K bytes compressed data from file]
+access => 734828(times) 5785M(bytes)
+          [hit ratio: 99.9989%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
+used swap file number: (12)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (14)
+closeHead: (12)
+closeTail: (13)
+openCnt: (1)
+fid(13): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#212659)
+	size(0) lastModTime(0) curModTime(1735540578)
+	mode(w+b)	hot(0) cool(12) pos(0)
+fid(12): fd(0) fileName(NULL)
+	mode(rb)	hot(13) cool(0) pos(0)
+fid(11): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(10): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(9): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(8): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Mon Dec 30 14:44:02 2024
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 835584 bytes [need 304K bytes if disable swap]
 
 used block: 39 [memory(39) file(0)]
-                 [ 8K(31) 64K(8) { total 760K bytes } ]
+                 [ 8K(30) 64K(9) { total 816K bytes } ]
 overhead: (9522) bytes for (39) blocks [Average: (244) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 8(times) 155K(bytes) [26K bytes compressed data from file]
-access => 3278300(times) 25668M(bytes)
-          [hit ratio: 99.9998%]
+read   => 9(times) 218K(bytes) [32K bytes compressed data from file]
+access => 790385(times) 6227M(bytes)
+          [hit ratio: 99.9989%]
 
 time: write(0) read(0)  unit: second
 
 swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (11)
+used swap file number: (14)
 
 
 
 swap file manager:
 arrSize: (256)
-idxCnt: (13)
-closeHead: (11)
-closeTail: (12)
+idxCnt: (16)
+closeHead: (14)
+closeTail: (15)
 openCnt: (1)
-fid(12): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735180932)
-	mode(w+b)	hot(0) cool(11) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(rb)	hot(12) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 11:12:54 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 925696 bytes [need 320K bytes if disable swap]
-
-used block: 50 [memory(50) file(0)]
-                 [ 8K(41) 64K(9) { total 904K bytes } ]
-overhead: (9522) bytes for (50) blocks [Average: (190) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 9(times) 204K(bytes) [32K bytes compressed data from file]
-access => 3695283(times) 28936M(bytes)
-          [hit ratio: 99.9998%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (13)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (15)
-closeHead: (13)
-closeTail: (14)
-openCnt: (1)
-fid(14): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735182775)
-	mode(w+b)	hot(0) cool(13) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(rb)	hot(14) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 11:21:28 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 2M bytes [need 320K bytes if disable swap]
-
-used block: 61 [memory(61) file(0)]
-                 [ 8K(51) 64K(10) { total 2M bytes } ]
-overhead: (9522) bytes for (61) blocks [Average: (156) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 10(times) 253K(bytes) [39K bytes compressed data from file]
-access => 4911895(times) 38452M(bytes)
-          [hit ratio: 99.9998%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (15)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (17)
-closeHead: (15)
-closeTail: (16)
-openCnt: (1)
-fid(16): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735183288)
-	mode(w+b)	hot(0) cool(15) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(rb)	hot(16) cool(0) pos(0)
+fid(15): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#212659)
+	size(0) lastModTime(0) curModTime(1735541043)
+	mode(w+b)	hot(0) cool(14) pos(0)
 fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
+	mode(rb)	hot(15) cool(0) pos(0)
 fid(13): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(12): fd(0) fileName(NULL)
@@ -318,42 +302,40 @@ fid(1): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 11:22:10 2024
+Swap system is reset at (Mon Dec 30 14:44:07 2024
 )
 version: (200506)
 
 available memory: 64M bytes
-used memory: 2M bytes [need 320K bytes if disable swap]
+used memory: 950272 bytes [need 304K bytes if disable swap]
 
-used block: 72 [memory(72) file(0)]
-                 [ 8K(61) 64K(11) { total 2M bytes } ]
-overhead: (9522) bytes for (72) blocks [Average: (132) bytes/block]
+used block: 46 [memory(46) file(0)]
+                 [ 8K(36) 64K(10) { total 928K bytes } ]
+overhead: (9522) bytes for (46) blocks [Average: (207) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 11(times) 302K(bytes) [46K bytes compressed data from file]
-access => 5013640(times) 39258M(bytes)
-          [hit ratio: 99.9998%]
+read   => 10(times) 256K(bytes) [38K bytes compressed data from file]
+access => 1040907(times) 8194M(bytes)
+          [hit ratio: 99.999%]
 
 time: write(0) read(0)  unit: second
 
 swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (17)
+used swap file number: (16)
 
 
 
 swap file manager:
 arrSize: (256)
-idxCnt: (19)
-closeHead: (17)
-closeTail: (18)
+idxCnt: (18)
+closeHead: (16)
+closeTail: (17)
 openCnt: (1)
-fid(18): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735183331)
-	mode(w+b)	hot(0) cool(17) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(rb)	hot(18) cool(0) pos(0)
+fid(17): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#212659)
+	size(0) lastModTime(0) curModTime(1735541047)
+	mode(w+b)	hot(0) cool(16) pos(0)
 fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
+	mode(rb)	hot(17) cool(0) pos(0)
 fid(15): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(14): fd(0) fileName(NULL)
@@ -386,2355 +368,41 @@ fid(1): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 11:22:13 2024
+Swap system is reset at (Mon Dec 30 14:45:02 2024
 )
 version: (200506)
 
 available memory: 64M bytes
-used memory: 2M bytes [need 320K bytes if disable swap]
+used memory: 1M bytes [need 304K bytes if disable swap]
 
-used block: 83 [memory(83) file(0)]
-                 [ 8K(71) 64K(12) { total 2M bytes } ]
-overhead: (9522) bytes for (83) blocks [Average: (114) bytes/block]
+used block: 51 [memory(51) file(0)]
+                 [ 8K(40) 64K(11) { total 1M bytes } ]
+overhead: (9522) bytes for (51) blocks [Average: (186) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 12(times) 351K(bytes) [52K bytes compressed data from file]
-access => 5101080(times) 39953M(bytes)
-          [hit ratio: 99.9998%]
+read   => 11(times) 280K(bytes) [42K bytes compressed data from file]
+access => 1068874(times) 8422M(bytes)
+          [hit ratio: 99.999%]
 
 time: write(0) read(0)  unit: second
 
 swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (19)
+used swap file number: (18)
 
 
 
 swap file manager:
 arrSize: (256)
-idxCnt: (21)
-closeHead: (19)
-closeTail: (20)
-openCnt: (1)
-fid(20): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735183333)
-	mode(w+b)	hot(0) cool(19) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(rb)	hot(20) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 11:22:27 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 2M bytes [need 320K bytes if disable swap]
-
-used block: 94 [memory(94) file(0)]
-                 [ 8K(81) 64K(13) { total 2M bytes } ]
-overhead: (9522) bytes for (94) blocks [Average: (101) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 13(times) 399K(bytes) [59K bytes compressed data from file]
-access => 15911190(times) 124419M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (21)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (23)
-closeHead: (21)
-closeTail: (22)
-openCnt: (1)
-fid(22): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735183347)
-	mode(w+b)	hot(0) cool(21) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(rb)	hot(22) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 12:08:23 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 2M bytes [need 320K bytes if disable swap]
-
-used block: 105 [memory(105) file(0)]
-                 [ 8K(91) 64K(14) { total 2M bytes } ]
-overhead: (9522) bytes for (105) blocks [Average: (90) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 14(times) 445K(bytes) [65K bytes compressed data from file]
-access => 15970204(times) 124891M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (23)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (25)
-closeHead: (23)
-closeTail: (24)
-openCnt: (1)
-fid(24): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735186103)
-	mode(w+b)	hot(0) cool(23) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(rb)	hot(24) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 12:08:33 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 2M bytes [need 320K bytes if disable swap]
-
-used block: 116 [memory(116) file(0)]
-                 [ 8K(101) 64K(15) { total 2M bytes } ]
-overhead: (9522) bytes for (116) blocks [Average: (82) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 15(times) 491K(bytes) [72K bytes compressed data from file]
-access => 16086742(times) 125812M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (25)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (27)
-closeHead: (25)
-closeTail: (26)
-openCnt: (1)
-fid(26): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735186113)
-	mode(w+b)	hot(0) cool(25) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(rb)	hot(26) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 13:35:25 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 2M bytes [need 320K bytes if disable swap]
-
-used block: 126 [memory(126) file(0)]
-                 [ 8K(110) 64K(16) { total 2M bytes } ]
-overhead: (9522) bytes for (126) blocks [Average: (75) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 16(times) 537K(bytes) [78K bytes compressed data from file]
-access => 16104314(times) 125959M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (27)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (29)
-closeHead: (27)
-closeTail: (28)
-openCnt: (1)
-fid(28): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735191326)
-	mode(w+b)	hot(0) cool(27) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(rb)	hot(28) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 13:37:32 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 2M bytes [need 320K bytes if disable swap]
-
-used block: 135 [memory(135) file(0)]
-                 [ 8K(118) 64K(17) { total 2M bytes } ]
-overhead: (9522) bytes for (135) blocks [Average: (70) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 17(times) 577K(bytes) [84K bytes compressed data from file]
-access => 16124476(times) 126125M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (29)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (31)
-closeHead: (29)
-closeTail: (30)
-openCnt: (1)
-fid(30): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735191453)
-	mode(w+b)	hot(0) cool(29) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(rb)	hot(30) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 13:38:04 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 3M bytes [need 320K bytes if disable swap]
-
-used block: 141 [memory(141) file(0)]
-                 [ 8K(123) 64K(18) { total 3M bytes } ]
-overhead: (9522) bytes for (141) blocks [Average: (67) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 18(times) 608K(bytes) [89K bytes compressed data from file]
-access => 16133036(times) 126201M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (31)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (33)
-closeHead: (31)
-closeTail: (32)
-openCnt: (1)
-fid(32): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735191485)
-	mode(w+b)	hot(0) cool(31) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(rb)	hot(32) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 13:39:08 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 3M bytes [need 320K bytes if disable swap]
-
-used block: 152 [memory(152) file(0)]
-                 [ 8K(132) 64K(20) { total 3M bytes } ]
-overhead: (9522) bytes for (152) blocks [Average: (62) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 20(times) 656K(bytes) [97K bytes compressed data from file]
-access => 16293097(times) 127470M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (35)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (36)
-closeHead: (33)
-closeTail: (35)
-openCnt: (1)
-fid(35): fd(0) fileName(NULL)
-	mode(rb)	hot(33) cool(0) pos(0)
-fid(34): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735191548)
-	mode(w+b)	hot(35) cool(33) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(rb)	hot(34) cool(35) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 13:46:16 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 3M bytes [need 320K bytes if disable swap]
-
-used block: 157 [memory(157) file(0)]
-                 [ 8K(136) 64K(21) { total 3M bytes } ]
-overhead: (9522) bytes for (157) blocks [Average: (60) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 21(times) 673K(bytes) [100K bytes compressed data from file]
-access => 16346513(times) 127894M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (36)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (38)
-closeHead: (36)
-closeTail: (37)
-openCnt: (1)
-fid(37): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735191976)
-	mode(w+b)	hot(0) cool(36) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(rb)	hot(37) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 13:52:23 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 3M bytes [need 320K bytes if disable swap]
-
-used block: 161 [memory(161) file(0)]
-                 [ 8K(139) 64K(22) { total 3M bytes } ]
-overhead: (9522) bytes for (161) blocks [Average: (59) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 22(times) 689K(bytes) [103K bytes compressed data from file]
-access => 16417340(times) 128454M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (38)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (40)
-closeHead: (38)
-closeTail: (39)
-openCnt: (1)
-fid(39): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735192343)
-	mode(w+b)	hot(0) cool(38) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(rb)	hot(39) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 13:57:37 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 3M bytes [need 320K bytes if disable swap]
-
-used block: 166 [memory(166) file(0)]
-                 [ 8K(143) 64K(23) { total 3M bytes } ]
-overhead: (9522) bytes for (166) blocks [Average: (57) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 23(times) 706K(bytes) [106K bytes compressed data from file]
-access => 17171608(times) 134354M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (40)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (42)
-closeHead: (40)
-closeTail: (41)
-openCnt: (1)
-fid(41): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735192657)
-	mode(w+b)	hot(0) cool(40) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(rb)	hot(41) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 14:23:11 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 3M bytes [need 320K bytes if disable swap]
-
-used block: 171 [memory(171) file(0)]
-                 [ 8K(147) 64K(24) { total 3M bytes } ]
-overhead: (9522) bytes for (171) blocks [Average: (55) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 24(times) 723K(bytes) [109K bytes compressed data from file]
-access => 17397941(times) 136129M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (42)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (44)
-closeHead: (42)
-closeTail: (43)
-openCnt: (1)
-fid(43): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735194191)
-	mode(w+b)	hot(0) cool(42) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(rb)	hot(43) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 15:12:57 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 3M bytes [need 320K bytes if disable swap]
-
-used block: 176 [memory(176) file(0)]
-                 [ 8K(151) 64K(25) { total 3M bytes } ]
-overhead: (9522) bytes for (176) blocks [Average: (54) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 25(times) 740K(bytes) [112K bytes compressed data from file]
-access => 17447728(times) 136525M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (44)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (46)
-closeHead: (44)
-closeTail: (45)
-openCnt: (1)
-fid(45): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735197177)
-	mode(w+b)	hot(0) cool(44) pos(0)
-fid(44): fd(0) fileName(NULL)
-	mode(rb)	hot(45) cool(0) pos(0)
-fid(43): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 15:13:03 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 3M bytes [need 320K bytes if disable swap]
-
-used block: 181 [memory(181) file(0)]
-                 [ 8K(155) 64K(26) { total 3M bytes } ]
-overhead: (9522) bytes for (181) blocks [Average: (52) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 26(times) 757K(bytes) [115K bytes compressed data from file]
-access => 18774833(times) 146900M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (46)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (48)
-closeHead: (46)
-closeTail: (47)
-openCnt: (1)
-fid(47): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735197183)
-	mode(w+b)	hot(0) cool(46) pos(0)
-fid(46): fd(0) fileName(NULL)
-	mode(rb)	hot(47) cool(0) pos(0)
-fid(45): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(44): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(43): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 17:50:07 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 3M bytes [need 320K bytes if disable swap]
-
-used block: 186 [memory(186) file(0)]
-                 [ 8K(159) 64K(27) { total 3M bytes } ]
-overhead: (9522) bytes for (186) blocks [Average: (51) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 27(times) 774K(bytes) [119K bytes compressed data from file]
-access => 18858185(times) 147559M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (48)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (50)
-closeHead: (48)
-closeTail: (49)
-openCnt: (1)
-fid(49): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735206607)
-	mode(w+b)	hot(0) cool(48) pos(0)
-fid(48): fd(0) fileName(NULL)
-	mode(rb)	hot(49) cool(0) pos(0)
-fid(47): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(46): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(45): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(44): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(43): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 17:56:25 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 4M bytes [need 320K bytes if disable swap]
-
-used block: 191 [memory(191) file(0)]
-                 [ 8K(163) 64K(28) { total 4M bytes } ]
-overhead: (9522) bytes for (191) blocks [Average: (49) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 28(times) 792K(bytes) [122K bytes compressed data from file]
-access => 18945222(times) 148246M(bytes)
-          [hit ratio: 99.9999%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (50)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (52)
-closeHead: (50)
-closeTail: (51)
-openCnt: (1)
-fid(51): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735206985)
-	mode(w+b)	hot(0) cool(50) pos(0)
-fid(50): fd(0) fileName(NULL)
-	mode(rb)	hot(51) cool(0) pos(0)
-fid(49): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(48): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(47): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(46): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(45): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(44): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(43): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 19:21:09 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 4M bytes [need 320K bytes if disable swap]
-
-used block: 196 [memory(196) file(0)]
-                 [ 8K(167) 64K(29) { total 4M bytes } ]
-overhead: (9522) bytes for (196) blocks [Average: (48) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 29(times) 812K(bytes) [125K bytes compressed data from file]
-access => 18996415(times) 148653M(bytes)
-          [hit ratio: 99.9998%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (52)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (54)
-closeHead: (52)
-closeTail: (53)
-openCnt: (1)
-fid(53): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735212069)
-	mode(w+b)	hot(0) cool(52) pos(0)
-fid(52): fd(0) fileName(NULL)
-	mode(rb)	hot(53) cool(0) pos(0)
-fid(51): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(50): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(49): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(48): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(47): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(46): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(45): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(44): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(43): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 19:25:53 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 4M bytes [need 320K bytes if disable swap]
-
-used block: 201 [memory(201) file(0)]
-                 [ 8K(171) 64K(30) { total 4M bytes } ]
-overhead: (9522) bytes for (201) blocks [Average: (47) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 30(times) 832K(bytes) [129K bytes compressed data from file]
-access => 19046832(times) 149055M(bytes)
-          [hit ratio: 99.9998%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (54)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (56)
-closeHead: (54)
-closeTail: (55)
-openCnt: (1)
-fid(55): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735212353)
-	mode(w+b)	hot(0) cool(54) pos(0)
-fid(54): fd(0) fileName(NULL)
-	mode(rb)	hot(55) cool(0) pos(0)
-fid(53): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(52): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(51): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(50): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(49): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(48): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(47): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(46): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(45): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(44): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(43): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 19:26:35 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 4M bytes [need 320K bytes if disable swap]
-
-used block: 206 [memory(206) file(0)]
-                 [ 8K(175) 64K(31) { total 4M bytes } ]
-overhead: (9522) bytes for (206) blocks [Average: (46) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 31(times) 852K(bytes) [132K bytes compressed data from file]
-access => 19105119(times) 149517M(bytes)
-          [hit ratio: 99.9998%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (56)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (58)
-closeHead: (56)
-closeTail: (57)
-openCnt: (1)
-fid(57): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735212395)
-	mode(w+b)	hot(0) cool(56) pos(0)
-fid(56): fd(0) fileName(NULL)
-	mode(rb)	hot(57) cool(0) pos(0)
-fid(55): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(54): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(53): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(52): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(51): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(50): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(49): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(48): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(47): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(46): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(45): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(44): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(43): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 19:47:16 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 4M bytes [need 328K bytes if disable swap]
-
-used block: 226 [memory(226) file(0)]
-                 [ 8K(192) 64K(34) { total 4M bytes } ]
-overhead: (9531) bytes for (226) blocks [Average: (42) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 34(times) 947K(bytes) [146K bytes compressed data from file]
-access => 19523836(times) 152818M(bytes)
-          [hit ratio: 99.9998%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (60)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (61)
-closeHead: (58)
-closeTail: (60)
-openCnt: (1)
-fid(60): fd(0) fileName(NULL)
-	mode(rb)	hot(58) cool(0) pos(0)
-fid(59): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735213636)
-	mode(w+b)	hot(60) cool(58) pos(0)
-fid(58): fd(0) fileName(NULL)
-	mode(rb)	hot(59) cool(60) pos(0)
-fid(57): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(56): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(55): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(54): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(53): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(52): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(51): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(50): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(49): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(48): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(47): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(46): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(45): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(44): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(43): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(17): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(16): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(15): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(14): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(13): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(12): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(11): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(10): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(9): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(8): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(7): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(6): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(5): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(4): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(3): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(2): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(1): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(0): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Thu Dec 26 19:52:53 2024
-)
-version: (200506)
-
-available memory: 64M bytes
-used memory: 4M bytes [need 328K bytes if disable swap]
-
-used block: 229 [memory(229) file(0)]
-                 [ 8K(194) 64K(35) { total 4M bytes } ]
-overhead: (9531) bytes for (229) blocks [Average: (41) bytes/block]
-
-write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 35(times) 1010K(bytes) [154K bytes compressed data from file]
-access => 19566263(times) 153155M(bytes)
-          [hit ratio: 99.9998%]
-
-time: write(0) read(0)  unit: second
-
-swap file directory: (/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog)
-used swap file number: (61)
-
-
-
-swap file manager:
-arrSize: (256)
-idxCnt: (63)
-closeHead: (61)
-closeTail: (62)
+idxCnt: (20)
+closeHead: (18)
+closeTail: (19)
 openCnt: (2)
-fid(62): fd(36) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#141732)
-	size(0) lastModTime(0) curModTime(1735213973)
-	mode(w+b)	hot(0) cool(61) pos(0)
-fid(61): fd(1073741824) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/simv.daidir/kdb.elab++/work.lib++/hb2_filter.v.tdc)
-	size(13245) lastModTime(1735213967) curModTime(1735213967)
-	mode(rb)	hot(62) cool(0) pos(0)
-fid(60): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(59): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(58): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(57): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(56): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(55): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(54): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(53): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(52): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(51): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(50): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(49): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(48): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(47): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(46): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(45): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(44): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(43): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(42): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(41): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(40): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(39): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(38): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(37): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(36): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(35): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(34): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(33): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(32): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(31): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(30): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(29): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(28): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(27): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(26): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(25): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(24): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(23): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(22): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(21): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(20): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(19): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
-fid(18): fd(0) fileName(NULL)
-	mode(NULL)	hot(0) cool(0) pos(0)
+fid(19): fd(33) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/_swap_0001#1757367822#212659)
+	size(0) lastModTime(0) curModTime(1735541103)
+	mode(w+b)	hot(0) cool(18) pos(0)
+fid(18): fd(1073741824) fileName(/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/simv.daidir/kdb.elab++/work.lib++/cic_comp_filter.v.tdc)
+	size(7570) lastModTime(1735541094) curModTime(1735541094)
+	mode(rb)	hot(19) cool(0) pos(0)
 fid(17): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(16): fd(0) fileName(NULL)
@@ -2772,6 +440,6 @@ fid(1): fd(0) fileName(NULL)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 ==================================================
-mySelf(17c2abc0) pre(14239e30) next(0)
+mySelf(1570c970) pre(149aa940) next(0)
 version(200506)
 date(Feb 11 2019 22:10:27)

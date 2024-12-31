@@ -3,18 +3,18 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/12/12 11:25
-// Last Modified : 2024/12/26 19:51
+// Last Modified : 2024/12/30 14:24
 // File Name     : hb2_filter.v
 // Description   :
-//         
+//
 // Copyright (c) 2024 Peking University.
 // ALL RIGHTS RESERVED
-// 
-// Local Variables: 
+//
+// Local Variables:
 // verilog-library-directories:("/home/qidc/Nutstore/Project")
 // verilog-library-directories-recursive:1
 // End:
-// 
+//
 // ---------------------------------------------------------------------------------
 // Modification History:
 // Date         By              Version                 Change Description
@@ -30,7 +30,7 @@ module hb2_filter (
     input                       clk_vld_in  ,
     input       signed  [34:0]  dat_in      ,
     output  reg                 clk_vld_out ,
-    output  reg signed  [34:0]  dat_out      
+    output  reg signed  [34:0]  dat_out
 );
 
     //-------------------------------------------
@@ -43,7 +43,7 @@ module hb2_filter (
     wire                        clk_vld_out_0   ;
     wire                        clk_vld_out_1   ;
     genvar                      ii              ;
-    
+
     //-------------------------------------------
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
@@ -51,7 +51,7 @@ module hb2_filter (
         else if (clk_vld_out_1)
             dat1_r[0]    <= dat_in;
     end
-    
+
     generate
     for (ii=1;ii<=18;ii=ii+1)
     always @(posedge clk or negedge rstn) begin
@@ -61,14 +61,14 @@ module hb2_filter (
             dat1_r[ii]  <= dat1_r[ii-1];
     end
     endgenerate
-    
+
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
             dat0_r[0]    <= 35'd0;
         else if (clk_vld_out_0)
             dat0_r[0]    <= dat_in;
     end
-    
+
     generate
     for (ii=1;ii<=37;ii=ii+1)
     always @(posedge clk or negedge rstn) begin
@@ -78,7 +78,7 @@ module hb2_filter (
             dat0_r[ii]  <= dat0_r[ii-1];
     end
     endgenerate
-    
+
     //---------------------------------------------------------
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
@@ -86,12 +86,13 @@ module hb2_filter (
         else if (clk_vld_in)
             cnt <= ~cnt;
     end
-    
+
     assign clk_vld_out_0 = clk_vld_in & (~cnt);
     assign clk_vld_out_1 = clk_vld_in & cnt;
-    
+
+    // 系数相乘计算结果
 /*----------------  by Qidc 2024-12-26  ---------------------
-    assign dat2[0]  = (dat0_r[0]  + dat0_r[37]) * signed'(31'd3870     ); 
+    assign dat2[0]  = (dat0_r[0]  + dat0_r[37]) * signed'(31'd3870     );
     assign dat2[1]  = (dat0_r[1]  + dat0_r[36]) * signed'(31'd16305    );
     assign dat2[2]  = (dat0_r[2]  + dat0_r[35]) * signed'(31'd48553    );
     assign dat2[3]  = (dat0_r[3]  + dat0_r[34]) * signed'(31'd119259   );
@@ -112,9 +113,9 @@ module hb2_filter (
     assign dat2[18] = (dat0_r[18] + dat0_r[19]) * signed'(31'd340477051);
     assign dat2[19] = dat1_r[18] * signed'(31'd536870912);
 ------------------  by Qidc 2024-12-26  -------------------*/
-    
-    wire [34:0] x[0:19];
-    
+
+    wire signed [34:0] x[0:19];
+
     assign x[0]  =  dat0_r[0]  + dat0_r[37];
     assign x[1]  =  dat0_r[1]  + dat0_r[36];
     assign x[2]  =  dat0_r[2]  + dat0_r[35];
@@ -136,6 +137,7 @@ module hb2_filter (
     assign x[18] =  dat0_r[18] + dat0_r[19];
     assign x[19] =  dat1_r[18];
 
+    // CSD 码优化系数相乘
     assign dat2[0] = {{18{x[0][34]}}, x[0], 12'b0}
                    - {{22{x[0][34]}}, x[0], 8'b0}
                    + {{25{x[0][34]}}, x[0], 5'b0}
@@ -300,42 +302,42 @@ module hb2_filter (
                     + {x[18]};
     assign dat2[19] = {{1{x[19][34]}}, x[19], 29'b0};
 
-    assign dat3 = +dat2[0] 
-                  -dat2[1] 
-                  +dat2[2]
-                  -dat2[3]
-                  +dat2[4]
-                  -dat2[5]
-                  +dat2[6]
-                  -dat2[7]
-                  +dat2[8]
-                  -dat2[9]
-                  +dat2[10]
-                  -dat2[11]
-                  +dat2[12]
-                  -dat2[13]
-                  +dat2[14]
-                  -dat2[15]
-                  +dat2[16]
-                  -dat2[17]
-                  +dat2[18]
-                  +dat2[19];
-    
+    assign dat3 = dat2[0]
+                - dat2[1]
+                + dat2[2]
+                - dat2[3]
+                + dat2[4]
+                - dat2[5]
+                + dat2[6]
+                - dat2[7]
+                + dat2[8]
+                - dat2[9]
+                + dat2[10]
+                - dat2[11]
+                + dat2[12]
+                - dat2[13]
+                + dat2[14]
+                - dat2[15]
+                + dat2[16]
+                - dat2[17]
+                + dat2[18]
+                + dat2[19];
+
     assign dat4 = dat3 >>> 30;
-    
+
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
             dat_out <= 35'd0;
         else if (clk_vld_out_1)
             dat_out <= dat4;
     end
-    
+
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
             clk_vld_out <= 1'b0;
         else
             clk_vld_out <= clk_vld_out_1;
     end
-    
-    
+
+
 endmodule

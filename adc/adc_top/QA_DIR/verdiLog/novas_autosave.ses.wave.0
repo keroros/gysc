@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 2490 845 270 65
+viewPort 0 27 2490 713 270 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -17,7 +17,7 @@ signalSpacing 5
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
 zoom 0.000000 661938850.000000
-cursor 339875000.000000
+cursor 287385000.000000
 marker 0.000000
 
 ; user define markers
@@ -25,7 +25,7 @@ marker 0.000000
 ; visible top row signal index
 top 7
 ; marker line index
-markerPos 21
+markerPos 26
 
 ; digital to analog list
 ; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
@@ -73,11 +73,11 @@ addSignal -h 16 -holdScope rstn
 addSignal -h 16 -1COMP -UDEC -holdScope dat_in[4:0]
 addSignal -h 16 -holdScope clk_vld_out
 addSignal -h 16 -1COMP -UDEC -holdScope dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_dat_in[4:0]
-addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_cic_dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_comp_dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_hb1_dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 61 /adc_top_tb/u_adc_top/DtoA_dat_in[4:0]
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 61 /adc_top_tb/u_adc_top/DtoA_cic_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 61 /adc_top_tb/u_adc_top/DtoA_comp_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 61 /adc_top_tb/u_adc_top/DtoA_hb1_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 61 /adc_top_tb/u_adc_top/DtoA_dat_out[34:0]
 addSignal -h 16 /adc_top_tb/u_adc_top/clk
 addSignal -h 16 -holdScope cic_clk_vld_out
 addSignal -h 16 -holdScope comp_clk_vld_out
@@ -89,6 +89,10 @@ addSignal -h 16 -1COMP -UDEC -holdScope comp_dat_out[34:0]
 addSignal -h 16 -1COMP -UDEC -holdScope hb1_dat_out[34:0]
 addSignal -h 16 -1COMP -UDEC -holdScope dat_out[34:0]
 addGroup "G4"
+addSignal -h 16 /adc_top_tb/u_adc_top/u_cic_comp_filter/dat2[0][64:0]
+addSignal -h 16 -holdScope dat2[1][64:0]
+addSignal -h 16 -holdScope dat2[2][64:0]
+addSignal -h 16 -holdScope x[0][34:0]
 addGroup "G5"
 
 ; getSignalForm Scope Hierarchy Status

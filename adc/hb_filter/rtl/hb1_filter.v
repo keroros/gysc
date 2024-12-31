@@ -3,18 +3,18 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/12/12 11:25
-// Last Modified : 2024/12/26 19:52
+// Last Modified : 2024/12/30 14:24
 // File Name     : hb1_filter.v
 // Description   :
-//         
+//
 // Copyright (c) 2024 Peking University.
 // ALL RIGHTS RESERVED
-// 
-// Local Variables: 
+//
+// Local Variables:
 // verilog-library-directories:("/home/qidc/Nutstore/Project")
 // verilog-library-directories-recursive:1
 // End:
-// 
+//
 // ---------------------------------------------------------------------------------
 // Modification History:
 // Date         By              Version                 Change Description
@@ -30,7 +30,7 @@ module hb1_filter (
     input                       clk_vld_in  ,
     input       signed  [34:0]  dat_in      ,
     output  reg                 clk_vld_out ,
-    output  reg signed  [34:0]  dat_out         
+    output  reg signed  [34:0]  dat_out
 );
 
     //-------------------------------------------
@@ -42,9 +42,8 @@ module hb1_filter (
     reg                         cnt             ;
     wire                        clk_vld_out_0   ;
     wire                        clk_vld_out_1   ;
-    
-    
-    
+
+
     // 数据打拍
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
@@ -58,7 +57,7 @@ module hb1_filter (
             dat1_r[1]    <= dat1_r[0]   ;
         end
     end
-    
+
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
         begin
@@ -75,7 +74,7 @@ module hb1_filter (
             dat0_r[3]    <= dat0_r[2]   ;
         end
     end
-    
+
     // 获取同频不同相位的两个降采样时钟
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
@@ -83,25 +82,24 @@ module hb1_filter (
         else if (clk_vld_in)
             cnt <= ~cnt;
     end
-    
+
     assign clk_vld_out_0 = clk_vld_in & (~cnt);
     assign clk_vld_out_1 = clk_vld_in & cnt;
-    
+
+/*----------------  by Qidc 2024-12-30  ---------------------
     // 系数相乘计算结果
-/*----------------  by Qidc 2024-12-26  ---------------------
     assign dat2[0] = (dat0_r[0] + dat0_r[3]) * signed'(31'd54357298 );
     assign dat2[1] = (dat0_r[1] + dat0_r[2]) * signed'(31'd316817548);
     assign dat2[2] = dat1_r[1] * signed'(31'd536870912);
-------------------  by Qidc 2024-12-26  -------------------*/
-    
+------------------  by Qidc 2024-12-30  -------------------*/
+
     wire signed [34:0] x[0:2];
-    wire signed [64:0] o[0:2];
-    
+
     assign x[0] = dat0_r[0] + dat0_r[3];
     assign x[1] = dat0_r[1] + dat0_r[2];
     assign x[2] = dat1_r[1];
 
-    // CSD码优化系数相乘
+    // CSD 码优化系数相乘
     assign dat2[0] = {{5{x[0][34]}}, x[0], 25'b0}
                    + {{6{x[0][34]}}, x[0], 24'b0}
                    + {{8{x[0][34]}}, x[0], 22'b0}
@@ -126,18 +124,16 @@ module hb1_filter (
                    + {{28{x[1][34]}}, x[1], 2'b0};
     assign dat2[2] = {{1{x[2][34]}}, x[2], 29'b0};
 
-
-
     assign dat3 = -dat2[0] +dat2[1] +dat2[2];
     assign dat4 = dat3 >>> 30;
-    
+
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
             dat_out <= 35'd0;
         else if (clk_vld_out_1)
             dat_out <= dat4;
     end
-    
+
     always @(posedge clk or negedge rstn) begin
         if (!rstn)
             clk_vld_out <= 1'b0;
