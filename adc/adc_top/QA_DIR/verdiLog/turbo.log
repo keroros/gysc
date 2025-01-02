@@ -1,5 +1,2 @@
 Command Line: /home/qidc/Synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -ssf rtl.fsdb -sswr signal.rc
 uname(Linux qidc 6.8.0-49-generic #49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2 x86_64)
-[MessageBox] The KDB has been updated by other processes. Reload the KDB to update it; otherwise, you may get unexpected results.
-Failed to bind ID for line(147) of file(/home/qidc/Nutstore/Project/gysc/adc/cic_comp_filter/rtl/cic_comp_filter.v)
-au time 27184.212071 49.209965 299.276710 delta 646389760 646389760 total 1017782272 1017782272

@@ -19,15 +19,15 @@ Console = FALSE
 powerDumped = 0
 [hb]
 postSimFile = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/rtl.fsdb
-syncTime = 287385000
-viewport = 70 27 2490 1376 0 0 325 2488
-activeNode = "adc_top_tb.u_adc_top.u_cic_comp_filter"
-activeScope = "adc_top_tb.u_adc_top.u_cic_comp_filter"
-activeFile = "/home/qidc/Nutstore/Project/gysc/adc/cic_comp_filter/rtl/cic_comp_filter.v"
+syncTime = 156185000
+viewport = 70 27 2490 1376 0 0 315 2488
+activeNode = "adc_top_tb"
+activeScope = "adc_top_tb"
+activeFile = "/home/qidc/Nutstore/Project/gysc/adc/adc_top/tb/adc_top_tb.sv"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 117
+sourceBeginLine = 24
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -44,23 +44,24 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "adc_top_tb.u_adc_top.u_cic_comp_filter"
-multipleSelection = 1 26 2 0 0
+Scope1 = "adc_top_tb"
+Scope2 = "sp_ram"
+multipleSelection = 2 33 11 0 0 34 11 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-dbdir" "/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/simv.daidir" 
 invokeDir = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR
 [hb.sourceTab.1]
-scope = adc_top_tb.u_adc_top.u_cic_comp_filter
-File = /home/qidc/Nutstore/Project/gysc/adc/cic_comp_filter/rtl/cic_comp_filter.v
-Line = 118
+scope = adc_top_tb
+File = /home/qidc/Nutstore/Project/gysc/adc/adc_top/tb/adc_top_tb.sv
+Line = 25
 [nMemoryManager]
 WaveformFile = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/rtl.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 2490 713 270 65
+viewPort = 0 27 2490 948 270 65
 primaryWindow = TRUE
 SessionFile = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE
