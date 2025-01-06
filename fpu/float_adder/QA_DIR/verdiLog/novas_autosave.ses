@@ -18,16 +18,11 @@ AnnotationShow = 0
 Console = FALSE
 powerDumped = 0
 [hb]
-postSimFile = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/rtl.fsdb
-syncTime = 96695000
-viewport = 70 27 2490 1376 0 0 57 2488
-activeNode = "sp_ram"
-activeScope = "sp_ram"
-activeFile = "/home/qidc/Nutstore/Project/config/cbb/sp_ram.v"
+viewport = 70 27 2490 1376 0 0 189 851
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 20
+sourceBeginLine = 0
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -44,25 +39,12 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "sp_ram"
-multipleSelection = 1 20 2 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
-[hb.design]
-importCmd = "-dbdir" "/home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/simv.daidir" 
-invokeDir = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR
-[hb.sourceTab.1]
-scope = sp_ram
-File = /home/qidc/Nutstore/Project/config/cbb/sp_ram.v
-Line = 21
-[nMemoryManager]
-WaveformFile = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/rtl.fsdb
-UserActionNum = 0
-nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 2490 954 270 65
+viewPort = 0 28 2490 225 394 275
 primaryWindow = TRUE
-SessionFile = /home/qidc/Nutstore/Project/gysc/adc/adc_top/QA_DIR/verdiLog/novas_autosave.ses.wave.0
+Empty = /home/qidc/Nutstore/Project/config/QA_DIR/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE
 hierarchicalName = FALSE
 snap = TRUE

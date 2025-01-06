@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2025/01/02 17:32
-// Last Modified : 2025/01/02 22:00
+// Last Modified : 2025/01/03 10:34
 // File Name     : register_file.v
 // Description   :
 //
@@ -53,7 +53,7 @@ module register_file (
 
     /* ---------------- 定义全部寄存器组 ----------------*/
 
-    // 陀螺XYZ轴滤波器输出，将每个轴的32位浮点数拆分到四个寄存器中
+    // 陀螺三轴滤波器输出，将每个轴的32位浮点数拆分到四个寄存器中
     reg [REG_DW-1:0] x_filter_0_reg;   // Read only
     reg [REG_DW-1:0] x_filter_1_reg;   // Read only
     reg [REG_DW-1:0] x_filter_2_reg;   // Read only
@@ -67,7 +67,7 @@ module register_file (
     reg [REG_DW-1:0] z_filter_2_reg;   // Read only
     reg [REG_DW-1:0] z_filter_3_reg;   // Read only
 
-    // 陀螺XYZ轴解调后输出，将每个轴的32位浮点数拆分到四个寄存器中
+    // 陀螺三轴解调后输出，将每个轴的32位浮点数拆分到四个寄存器中
     reg [REG_DW-1:0] x_demod_0_reg;    // Read only
     reg [REG_DW-1:0] x_demod_1_reg;    // Read only
     reg [REG_DW-1:0] x_demod_2_reg;    // Read only

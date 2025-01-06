@@ -9,4 +9,4 @@
 /home/qidc/Nutstore/Project/gysc/adc/cic_comp_filter/rtl/cic_comp_filter.v
 /home/qidc/Nutstore/Project/gysc/adc/cic_filter/rtl/cic_filter.v
 
-/home/qidc/Nutstore/Project/config/cbb/fix2float.v
+/home/qidc/Nutstore/Project/gysc/fpu/fix2float/rtl/fix2float.v

@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 2490 845 270 65
+viewPort 0 27 2490 661 270 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -17,15 +17,15 @@ signalSpacing 5
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
 zoom 0.000000 661938850.000000
-cursor 339875000.000000
+cursor 96695000.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 7
+top 9
 ; marker line index
-markerPos 21
+markerPos 10
 
 ; digital to analog list
 ; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
@@ -46,7 +46,11 @@ allDtoA "DtoA_hb1_dat_out[34:0]" 0.000000 1.000000 0.500000 0.500000 /adc_top_tb
 
 ; digital to analog list
 ; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
-allDtoA "DtoA_dat_out[34:0]" 0.000000 1.000000 0.500000 0.500000 /adc_top_tb/u_adc_top/dat_out[34:0] -1COMP 
+allDtoA "DtoA_hb2_dat_out[34:0]" 0.000000 1.000000 0.500000 0.500000 /adc_top_tb/u_adc_top/hb2_dat_out[34:0] -2COMP 
+
+; digital to analog list
+; allDtoA sig_name vv0 vv1 vvz vvx org_signal_name org_notation
+allDtoA "DtoA_dat_out[31:0]" 0.000000 1.000000 0.500000 0.500000 /adc_top_tb/u_adc_top/dat_out[31:0] -IEEE754 
 
 ; event list
 ; addEvent event_name event_expression
@@ -72,12 +76,12 @@ addSignal -h 16 /adc_top_tb/u_adc_top/clk
 addSignal -h 16 -holdScope rstn
 addSignal -h 16 -1COMP -UDEC -holdScope dat_in[4:0]
 addSignal -h 16 -holdScope clk_vld_out
-addSignal -h 16 -1COMP -UDEC -holdScope dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_dat_in[4:0]
-addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_cic_dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_comp_dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_hb1_dat_out[34:0]
-addSignal -w analog -ds pwl -c ID_BLUE5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_RED5 -ls solid -lw 1 -h 79 /adc_top_tb/u_adc_top/DtoA_dat_in[4:0]
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 79 /adc_top_tb/u_adc_top/DtoA_cic_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_GREEN5 -ls solid -lw 1 -h 79 /adc_top_tb/u_adc_top/DtoA_comp_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_CYAN5 -ls solid -lw 1 -h 79 /adc_top_tb/u_adc_top/DtoA_hb1_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_ORANGE5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_hb2_dat_out[34:0]
+addSignal -w analog -ds pwl -c ID_YELLOW5 -ls solid -lw 1 -h 98 /adc_top_tb/u_adc_top/DtoA_dat_out[31:0]
 addSignal -h 16 /adc_top_tb/u_adc_top/clk
 addSignal -h 16 -holdScope cic_clk_vld_out
 addSignal -h 16 -holdScope comp_clk_vld_out
@@ -87,9 +91,9 @@ addGroup "G3"
 addSignal -h 16 -1COMP -UDEC /adc_top_tb/u_adc_top/cic_dat_out[34:0]
 addSignal -h 16 -1COMP -UDEC -holdScope comp_dat_out[34:0]
 addSignal -h 16 -1COMP -UDEC -holdScope hb1_dat_out[34:0]
-addSignal -h 16 -1COMP -UDEC -holdScope dat_out[34:0]
+addSignal -h 16 -2COMP -HEX -holdScope hb2_dat_out[34:0]
+addSignal -h 16 -UNSIGNED -IEEE754 -holdScope dat_out[31:0]
 addGroup "G4"
-addGroup "G5"
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm
