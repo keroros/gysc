@@ -3,7 +3,7 @@
 // Author        : Qidc
 // Email         : qidc@stu.pku.edu.cn
 // Created On    : 2024/12/12 14:56
-// Last Modified : 2025/01/02 13:16
+// Last Modified : 2025/01/08 10:44
 // File Name     : adc_top_tb.sv
 // Description   :
 //         
